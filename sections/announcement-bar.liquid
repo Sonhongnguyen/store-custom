@@ -41,7 +41,7 @@
             >
           {%- endif -%}
           <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
+            <span>{{ section.blocks.first.settings.text }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
             {%- endif -%}
@@ -100,7 +100,7 @@
                       >
                     {%- endif -%}
                     <p class="announcement-bar__message h5">
-                      <span>{{ block.settings.text | escape }}</span>
+                      <span>{{ block.settings.text }}</span>
                       {%- if block.settings.link != blank -%}
                         {% render 'icon-arrow' %}
                       {%- endif -%}
@@ -299,9 +299,9 @@
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
         {
-          "type": "text",
+          "type": "richtext",
           "id": "text",
-          "default": "Welcome to our store",
+          "default": "<p>Welcome to our store</p>",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
         {

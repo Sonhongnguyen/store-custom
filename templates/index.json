@@ -1,5 +1,145 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
+    "hero_section_eMcHyw": {
+      "type": "hero-section",
+      "blocks": {
+        "item_t77hcC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero-1.webp",
+            "image_mb": "shopify:\/\/shop_images\/hero-1.webp",
+            "title": "",
+            "title_mb": "",
+            "description": "",
+            "description_mb": "",
+            "button": "",
+            "button_1": "",
+            "url_item": "",
+            "bg_item": "#fff6ec"
+          }
+        },
+        "item_wccTDV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero-2.webp",
+            "image_mb": "shopify:\/\/shop_images\/hero-2.webp",
+            "title": "",
+            "title_mb": "",
+            "description": "",
+            "description_mb": "",
+            "button": "",
+            "button_1": "",
+            "url_item": "",
+            "bg_item": "#bee7e7"
+          }
+        },
+        "item_JWNeVb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero-3.jpg",
+            "image_mb": "shopify:\/\/shop_images\/hero-3.jpg",
+            "title": "",
+            "title_mb": "",
+            "description": "",
+            "description_mb": "",
+            "button": "",
+            "button_1": "",
+            "url_item": "",
+            "bg_item": "#5271ff"
+          }
+        },
+        "item_mheyKQ": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero-4.webp",
+            "image_mb": "shopify:\/\/shop_images\/hero-4.webp",
+            "title": "",
+            "title_mb": "",
+            "description": "",
+            "description_mb": "",
+            "button": "",
+            "button_1": "",
+            "url_item": "",
+            "bg_item": "#fff6ec"
+          }
+        },
+        "item_JPGaEm": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/hero-5.webp",
+            "image_mb": "shopify:\/\/shop_images\/hero-5.webp",
+            "title": "",
+            "title_mb": "",
+            "description": "",
+            "description_mb": "",
+            "button": "",
+            "button_1": "",
+            "url_item": "",
+            "bg_item": "#65a8ef"
+          }
+        }
+      },
+      "block_order": [
+        "item_t77hcC",
+        "item_wccTDV",
+        "item_JWNeVb",
+        "item_mheyKQ",
+        "item_JPGaEm"
+      ],
+      "settings": {
+        "layout_width_section": "full",
+        "number_column": "one",
+        "enable_autoplay": true,
+        "enable_pagination": true,
+        "slide_transfer_time": 9,
+        "content_position": "middle-center",
+        "content_position_mb": "middle-center",
+        "align_content_section": "center",
+        "margin_bottom_title": 12,
+        "margin_bottom_title_mb": 8,
+        "margin_bottom_des": 12,
+        "margin_bottom_des_mb": 8,
+        "button_type": "field",
+        "bg_color_section": "#242833",
+        "color_content": "#f7f7f6",
+        "color_button_text": "#f7f7f6",
+        "show_border_pagination": false,
+        "button_overlap_img": false,
+        "bg_btn_pagination": "#0581F4",
+        "position_pagination_left": 50,
+        "position_pagination_bottom": 9,
+        "position_pagination_left_mb": 50,
+        "position_pagination_bottom_mb": 8,
+        "margin_bottom_pagination": 6,
+        "margin_left_pagination": 10,
+        "margin_bottom_pagination_mb": 10,
+        "margin_left_pagination_mb": 8,
+        "space_top": 12,
+        "space_bottom": 12,
+        "space_top_mb": 12,
+        "space_bottom_mb": 12,
+        "space_left": 12,
+        "space_right": 12,
+        "space_left_mb": 12,
+        "space_right_mb": 12,
+        "space_top_outside": 0,
+        "space_bottom_outside": 12,
+        "space_top_outside_mb": 0,
+        "space_bottom_outside_mb": 12,
+        "color_overlay": "#000000",
+        "overlay_opacity": 0,
+        "gradient_overlay": ""
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -26,6 +166,7 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
@@ -69,6 +210,7 @@
     }
   },
   "order": [
+    "hero_section_eMcHyw",
     "image_banner",
     "featured_collection"
   ]

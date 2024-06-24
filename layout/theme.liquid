@@ -252,6 +252,7 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -348,5 +349,6 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
+  </body> 
 </html>
