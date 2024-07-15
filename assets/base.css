@@ -96,7 +96,7 @@ html.no-js .no-js-hidden {
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.6rem;
 }
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
@@ -113,13 +113,13 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .utility-bar__grid.page-width {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 3.2rem;
   }
 
   .header.page-width,
@@ -137,14 +137,14 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
 
   .page-width-tablet {
-    padding: 0 5rem;
+    padding: 0 3.2rem;
   }
 }
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
   }
 
   .page-width--narrow {
@@ -154,7 +154,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
   .page-width-desktop {
     max-width: var(--page-width);
-    padding: 0 5rem;
+    padding: 0 3.2rem;
   }
 }
 
@@ -1585,7 +1585,7 @@ details[open] > .share-button__fallback {
   appearance: none;
   background-color: rgb(var(--color-background));
   color: rgb(var(--color-foreground));
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   width: 100%;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
@@ -2171,7 +2171,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
     margin: auto;
   }
 }
-
+.announcement-bar {
+  padding: 1.2rem 0;
+}
 .announcement-bar,
 .announcement-bar__announcement {
   color: rgb(var(--color-foreground));
@@ -2237,8 +2239,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 @media screen and (min-width: 990px) {
   body:has(.section-header .header:not(.drawer-menu)) .utility-bar .page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
   }
 
   .announcement-bar-slider {
@@ -2276,7 +2278,6 @@ product-info .loading__spinner:not(.hidden) ~ *,
   padding: 1rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
-  min-height: 3.8rem;
 }
 
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
