@@ -140,6 +140,143 @@
         "gradient_overlay": ""
       }
     },
+    "collection_feature_cs_GBdJkA": {
+      "type": "collection-feature-cs",
+      "blocks": {
+        "collection_tUtrzz": {
+          "type": "collection",
+          "settings": {
+            "collection": "flea-tick",
+            "title": ""
+          }
+        },
+        "collection_zCbxxQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "cat-treats",
+            "title": ""
+          }
+        },
+        "collection_qRc9hz": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_f8ieUF": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_qmUmJB": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_PdVYFn": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_9HGbnP": {
+          "type": "collection",
+          "settings": {
+            "collection": "flea-tick",
+            "title": ""
+          }
+        },
+        "collection_KqVQiR": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_CepAV7": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_Tj3Rrw": {
+          "type": "collection",
+          "settings": {
+            "collection": "cat-treats",
+            "title": ""
+          }
+        },
+        "collection_yNhWEj": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_dMpFp7": {
+          "type": "collection",
+          "settings": {
+            "collection": "flea-tick",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_tUtrzz",
+        "collection_zCbxxQ",
+        "collection_qRc9hz",
+        "collection_f8ieUF",
+        "collection_qmUmJB",
+        "collection_PdVYFn",
+        "collection_9HGbnP",
+        "collection_KqVQiR",
+        "collection_CepAV7",
+        "collection_Tj3Rrw",
+        "collection_yNhWEj",
+        "collection_dMpFp7"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "img_type": "rounder",
+        "collections_per_row_desktop": 6,
+        "collections_per_row_mobile": 3,
+        "space_between_items": 30,
+        "space_between_items_mb": 30,
+        "space_column_between_items": 30,
+        "space_column_between_items_mb": 30,
+        "title": "Top Categories",
+        "font_size_title": 30,
+        "font_size_title_mb": 30,
+        "align_heading_section": "left",
+        "font_size_item": 16,
+        "font_size_item_mb": 16,
+        "space_top": 12,
+        "space_bottom": 12,
+        "space_top_mb": 12,
+        "space_bottom_mb": 12
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -211,6 +348,7 @@
   },
   "order": [
     "hero_section_eMcHyw",
+    "collection_feature_cs_GBdJkA",
     "image_banner",
     "featured_collection"
   ]

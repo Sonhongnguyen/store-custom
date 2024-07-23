@@ -1,0 +1,278 @@
+{% for block in section.blocks %}
+    {% assign article = block.settings.article %}
+    {% assign img_padding = 1 | divided_by: article.image.aspect_ratio | times: 100 | append: '%' %}
+{% endfor %}
+
+<style>
+    .section-news--{{ section.id }} {
+        padding: {{ section.settings.padding_top_mb }}px 16px  {{ section.settings.padding_bottom_mb }}px;
+    }
+    .section-news--{{ section.id }} .news__heading-container {
+      margin-bottom: 20px;
+    }
+    .section-news--{{ section.id }} .news__heading h3 {
+      font-family: "Whitney", sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 101.1%;
+      margin: 0;
+      color: #000;
+    }
+    .section-news--{{ section.id }} .news__heading {
+      margin-right: 10px;
+    }
+    .section-news--{{ section.id }} .news__btn a {
+      font-family: "Whitney Book", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 101.1%;
+      margin: 0;
+      color: #000;
+      align-items: flex-start;
+    }
+    .section-news--{{ section.id }} .news__btn a svg {
+      margin-left: 9px;
+      margin-bottom: -4px;
+    }
+    .section-news--{{ section.id }} .news-items {
+        flex-direction: column;
+
+    }
+    .section-news--{{ section.id }} .news-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .section-news--{{ section.id }} .news-item:last-child {
+        margin-bottom: 0;
+    }
+    .section-news--{{ section.id }} .article-img {
+        margin-bottom: 20px;
+        padding-bottom: {{ img_padding }}; 
+        position: relative;       
+    }
+    .section-news--{{ section.id }} .article-img iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;  
+    }
+    .section-news--{{ section.id }} .article-img img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;    
+    }
+    .section-news--{{ section.id }} .article-info h3 {
+        color: #000;
+        font-family: "Whitney";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 101.1%;
+        margin-bottom: 16px;
+        max-width: 340px;
+    }
+    .section-news--{{ section.id }} .article-info p,
+    .section-news--{{ section.id }} .article-info p span,
+    .section-news--{{ section.id }} .article-info .read-more-btn {
+        color: #000;
+        font-family: "Whitney Book";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 101.1%;
+    }
+    .section-news--{{ section.id }} .article-info p{
+        margin-bottom: 30px;
+    }
+    .section-news--{{ section.id }} .article-info .read-more-btn {
+        text-decoration: underline;
+        display: flex;
+    }
+    .section-news--{{ section.id }} .article-info p span:empty {
+        display: none !important;
+    }
+    .section-news--{{ section.id }} video-component iframe {
+        width: 100%;
+    }
+    @media(min-width:769px) {
+        .section-news--{{ section.id }} {
+            max-width: 1440px;
+            margin: auto;
+            padding: {{ section.settings.padding_top }}px 30px  {{ section.settings.padding_bottom }}px;
+        }
+        .section-news--{{ section.id }} .news__btn a svg {
+            margin-bottom: 0;
+        }
+        .section-news--{{ section.id }} .news__heading h3 {
+            font-size: 45px;
+        }
+        .section-news--{{ section.id }} .news-items {
+            flex-direction: row;
+        }
+        .section-news--{{ section.id }} .news-item {
+            width: calc(100%/3 - 9.34px);
+            margin-right: 14px;
+            margin-bottom: 0;
+        }
+        .section-news--{{ section.id }} .news-item:last-child {
+            margin-right: 0;
+        }
+        .section-news--{{ section.id }} .article-img {
+            margin-bottom: 30px;
+        }
+        .section-news--{{ section.id }} .article-info h3 {
+            margin-bottom: 15px;
+        }
+        .section-news--{{ section.id }} .article-info p {
+            margin-bottom: 25px;
+            max-width: 420px;
+        }
+        .section-news--{{ section.id }} .article-info {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+</style>
+<div class="section-news--{{ section.id }}"> 
+    {% if section.settings.heading_text != blank or section.settings.btn_text != blank %}
+        <div class="flex justify-between md:items-center items-end news__heading-container">
+          {% if section.settings.heading_text != blank %}
+            <div class="news__heading">
+              <h3>{{ section.settings.heading_text }}</h3>
+            </div>
+          {% endif %}
+          {% if section.settings.btn_text != blank %}
+            <div class="news__btn">
+              <a href="{{ section.settings.btn_url }}" class="flex items-end">
+                {{ section.settings.btn_text }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <mask id="mask0_1_261" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                    <rect width="24" height="24" fill="#D9D9D9"/>
+                  </mask>
+                  <g mask="url(#mask0_1_261)">
+                    <path d="M14.1 17.3L13.4 16.6L17.475 12.5H4.59998V11.5H17.475L13.4 7.39995L14.1 6.69995L19.4 12L14.1 17.3Z" fill="#1C1B1F"/>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+    {% endif %}
+    <div class="news-items flex">
+        {% for block in section.blocks %}
+            {% assign article = block.settings.article %}
+            <div class="news-item">
+                <div class="article-img relative">
+                    {% if article.metafields.custom.image_article != blank %}
+                        {% assign media = article.metafields.custom.image_article %}
+                        {% assign parts = media | split: "/" %}
+                        {% assign videoIdWithParams = parts.last %}
+                        <iframe class="w-full h-full" src="{{ 'https://www.youtube.com/embed/' |  append: videoIdWithParams }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    {% else %}
+                    <a href="{{ article.url }}">
+                        {{ article.image | image_url: width: '1024x1024' | image_tag: loading: 'lazy' , alt: article.image.alt }}
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="article-info">
+                    <a href="{{ article.url }}">
+                        <h3>{{ article.title }}</h3>
+                        <p>
+                            {%- if article.excerpt.size > 0 -%}
+                            {{ article.excerpt }}
+                            {%- else -%}
+                            {{ article.content | strip_html }}
+                            {%- endif -%}
+                        </p>
+                    </a>
+                    <a class="read-more-btn" href="{{ article.url }}">{{ block.settings.btn_article }}</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% schema %}
+    {
+        "name": "News",
+        "settings": [
+            {
+                "type": "text",
+                "id": "heading_text",
+                "label": "Heading section",
+                "default": "News"
+            },
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Text button",
+                "default": "More news"
+            },
+            {
+                "type": "url",
+                "id": "btn_url",
+                "label": "Button link"
+            },
+            {
+                "type": "header",
+                "content": "Padding section"
+            },
+            {
+                "type": "number",
+                "id": "padding_top",
+                "default": 0,
+                "label": "Padding top"
+            },
+            {
+                "type": "number",
+                "id": "padding_bottom",
+                "default": 0,
+                "label": "Padding bottom"
+            },
+            {
+                "type": "number",
+                "id": "padding_top_mb",
+                "default": 0,
+                "label": "Padding top mobile"
+            },
+            {
+                "type": "number",
+                "id": "padding_bottom_mb",
+                "default": 0,
+                "label": "Padding bottom mobile"
+            }
+        ],
+        "blocks": [
+            {
+                "name": "Article",
+                "type": "article",
+                "limit": 3,
+                "settings": [
+                    {
+                        "type": "article",
+                        "id": "article",
+                        "label": "Article"
+                    },
+                    {
+                        "type": "text",
+                        "id": "btn_article",
+                        "label": "Button article",
+                        "default": "Read more"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "News"
+            }
+        ]
+    }
+{% endschema %}
