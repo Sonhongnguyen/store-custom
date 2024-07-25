@@ -67,6 +67,35 @@
                     </li>
                   {%- endfor -%}
                 </ul>
+                {% assign menuHandel = link.handle | downcase | replace: '-', ' ' %}
+                {% for block in section.blocks %}
+                  {% assign navigateMenu = block.settings.navigate_menu | downcase %}
+                  {% if navigateMenu == menuHandel %}
+                    {%- if block.settings.img_megamenu != blank -%}
+                      <div class="img-megamenu">
+                        <div class="img-megamenu__container">
+                          <div class="img-megamenu__content" >
+                            {{ block.settings.img_megamenu | image_url: width: 1440 | image_tag: alt: block.settings.img_megamenu.alt, width: block.settings.img_megamenu.width  }}
+                          </div>
+                          <div class="img-megamenu__content-text">
+                            {% if block.settings.title_megamenu != blank %}
+                              <div class="img-megamenu__title">
+                                <h3 style="color: {{ block.settings.text_color_mega }}">{{ block.settings.title_megamenu }}</h3>
+                              </div>
+                            {% endif %}
+                            {% if block.settings.btn_megamenu %}
+                              <{%- if block.settings.url_btn_megamenu != blank -%}a href="{{ block.settings.url_btn_megamenu }}"{%- else -%}span{%- endif -%}
+                                style="color: {{ block.settings.text_color_mega }}"
+                                class="img-megamenu__button">
+                                {{ block.settings.btn_megamenu }}
+                              </{%- if block.settings.url_btn_megamenu != blank -%}a{%- else -%}span{%- endif -%}>
+                            {% endif %}
+                          </div>
+                        </div>
+                      </div>                  
+                    {%- endif -%} 
+                  {% endif %}
+                {% endfor %}
               </div>
             </details>
           </header-menu>
