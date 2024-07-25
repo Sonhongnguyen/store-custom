@@ -85,3 +85,62 @@
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
 }
+/* mega menu */
+.mega-menu__content {
+  display: flex;
+}
+.mega-menu__content .mega-menu__list {
+  width: 70%;
+  padding-inline: 0 20px;
+}
+.mega-menu__content .img-megamenu {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.mega-menu__content .img-megamenu img {
+  width: 100%;
+  height: auto;
+} 
+
+.mega-menu__content .img-megamenu .img-megamenu__container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+}
+.mega-menu__content .img-megamenu .img-megamenu__content-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.img-megamenu__title {
+  margin-bottom: 12px;
+}
+.img-megamenu__button {
+  line-height: 1;
+}
+.img-megamenu__title h3 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1;
+}
+@media(min-width: 1400px) {
+  .img-megamenu__title h3 {
+      font-size: 36px;
+  }
+}
+@media(min-width: 1400px) {
+  .img-megamenu__title h3 {
+      font-size: 48px;
+  }
+}
