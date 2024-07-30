@@ -1264,3 +1264,24 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+class FAQSection extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.querySelectorAll(".faq-items").forEach((item) => {
+      item.querySelector(".question-faq").removeAttribute("open");
+      item.querySelector(".question-faq").addEventListener("click", () => {
+        this.querySelectorAll(".faq-items").forEach((otherItem) => {
+          if (otherItem !== item) {
+            otherItem.removeAttribute("open");
+          }
+        });
+        item.toggleAttribute("open");
+      });
+    });
+  }
+}
+
+customElements.define("faq-section", FAQSection);

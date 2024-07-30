@@ -1,0 +1,200 @@
+<style>
+faq-section{
+  display: block;
+  margin: 20px;
+}
+
+.faq-items {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.answer-faq p, 
+.question-faq p {
+  margin: 0;
+}
+
+.question-faq {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  font-size: {{ section.settings.question_size_mobile }}px;
+}
+
+.answer-faq {
+  display: block;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  font-size: {{ section.settings.answer_size_mobile }}px;
+}
+
+.faq-items[open] .answer-faq {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  padding: 10px;
+  transition: all 0.5s;
+}
+@media (min-width: 990px) {
+  .question-faq {
+    font-size: {{ section.settings.question_size }}px;
+  }
+  .answer-faq {
+    font-size: {{ section.settings.answer_size }}px;
+  }
+}
+</style>
+<faq-section class="faq-container">
+  {% for block in section.blocks %}
+    {% if block.settings.question != blank %}
+      <div class="faq-items">
+        <div class="question-faq flex justify-center items-center">
+          <div style="color: {{ section.settings.question_color }};">
+            {{ block.settings.question }}
+          </div>
+          {% render 'icon-arrow' %}
+        </div>
+        {% if block.settings.answer != blank %}
+          <div class="answer-faq" style="color: {{ section.settings.answer_color }};">{{ block.settings.answer }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</faq-section>
+{% schema %}
+{
+  "name": "FAQ section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Heading text",
+      "default": "This is heading"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color"
+    },
+    {
+      "type": "number",
+      "id": "heading_size",
+      "label": "Heading size"
+    },
+    {
+      "type": "number",
+      "id": "heading_size_mobile",
+      "label": "Heading size mobile"
+    },
+    {
+      "type": "number",
+      "id": "heading_margin_bottom",
+      "label": "Heading margin bottom"
+    },
+    {
+      "type": "number",
+      "id": "heading_margin_bottom_mobile",
+      "label": "Heading margin bottom mobile"
+    },
+    {
+      "type": "select",
+      "id": "position_heading",
+      "label": "Position heading",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "header",
+      "content": "Question"
+    },
+    {
+      "type": "color",
+      "id": "question_color",
+      "label": "Question color"
+    },
+    {
+      "type": "number",
+      "id": "question_size",
+      "label": "Question size"
+    },
+    {
+      "type": "number",
+      "id": "question_size_mobile",
+      "label": "Question size mobile"
+    },
+    {
+      "type": "header",
+      "content": "Answer"
+    },
+    {
+      "type": "color",
+      "id": "answer_color",
+      "label": "Answer color"
+    },
+    {
+      "type": "number",
+      "id": "answer_size",
+      "label": "Answer size"
+    },
+    {
+      "type": "number",
+      "id": "answer_size_mobile",
+      "label": "Answer size mobile"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "Faq",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "question",
+          "label": "Question",
+          "default": "<p>This is questions</p>"
+        },
+        {
+          "type": "header",
+          "content": "Answer"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>This is answer</p>"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
