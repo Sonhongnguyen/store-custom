@@ -27,6 +27,8 @@
       ],
       "settings": {
         "color_scheme": "accent-2",
+        "background_color": "#000b44",
+        "content_color": "#ffffff",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -37,10 +39,39 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "block_KYHxXa": {
+          "type": "block",
+          "settings": {
+            "width_image_menu": 70,
+            "position_image": "bottom",
+            "navigate_menu": "Home",
+            "img_megamenu": "shopify:\/\/shop_images\/purina-vet-diet.jpg",
+            "title_megamenu": "home",
+            "btn_megamenu": "button",
+            "url_btn_megamenu": "",
+            "text_color_mega": "#0581f4",
+            "number_colum_menu": 1,
+            "logo_list": true,
+            "number_column_logo": 6,
+            "space_between_logo": 8,
+            "title_logo_list": "Popular Brand",
+            "img_mega_1": "shopify:\/\/shop_images\/carna4.jpg",
+            "img_mega_2": "shopify:\/\/shop_images\/stella-chewys-brand.jpg",
+            "img_mega_3": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "img_mega_4": "shopify:\/\/shop_images\/canine-caviar.jpg",
+            "img_mega_5": "shopify:\/\/shop_images\/rockster.jpg",
+            "img_mega_6": "shopify:\/\/shop_images\/badlands-ranch.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "block_KYHxXa"
+      ],
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "scheme-433bb92b-2e5d-4793-a062-993bfc977f12",
