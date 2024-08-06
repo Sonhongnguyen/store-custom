@@ -3,6 +3,8 @@
 
   Usage:
   {% render 'header-mega-menu' %}
+
+  !text-[#5b616b] !block !px-[1.6rem] !pt-[2.4rem]  
 {% endcomment %}
 
 <nav class="header__inline-menu">
@@ -25,13 +27,28 @@
                 </span>
                 {% render 'icon-caret' %}
               </summary>
+              {%- assign variable_position_image = false -%}
+              {% assign menuHandel = link.handle | downcase | replace: '-', ' ' %}
+              {% for block in section.blocks %}
+                {% assign navigateMenu = block.settings.navigate_menu | downcase %}
+                {% if navigateMenu == menuHandel %}
+                  {%- assign width_image_menu =  block.settings.width_image_menu -%}
+                  {% if block.settings.position_image == 'bottom' %}
+                   {%- assign variable_position_image = true -%}
+                   {%- assign width_image_menu = 100 -%}
+                  {% endif %}
+                  {%- assign number_of_column = block.settings.number_colum_menu -%}
+                {% endif %}
+              {% endfor %}
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                class="mega-menu__content !bg-white color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup {% if variable_position_image == true %} !block {% endif %}"
+                style="--width-img-megamenu: {{ width_image_menu }}%;"
                 tabindex="-1"
               >
                 <ul
                   class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
+                  style="--grid-columns-menu: repeat({{- number_of_column -}},minmax(0,1fr)); {% if variable_position_image == true %} width: 100%; {% endif %}"
                   role="list"
                 >
                   {%- for childlink in link.links -%}
@@ -39,7 +56,7 @@
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                        class="mega-menu__link mega-menu__link--level-2 link !no-underline !text-[#036ccd] text-[16px] !leading-8 !px-0 !py-[10px] mb-[15px] {% if childlink.current %} mega-menu__link--active{% endif %}"
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
@@ -49,16 +66,19 @@
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
-                            <li>
+                            <li class="mb-[15px] last:mb-0">
                               <a
                                 id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                 href="{{ grandchildlink.url }}"
-                                class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
+                                class="mega-menu__link link !no-underline text-[16px] !leading-8 hover:!text-[#036ccd] !p-0 !flex items-center {% if grandchildlink.title contains '[icon]' %}!text-[#036ccd]{% else %}!text-[#5b616b]{% endif %} {% if grandchildlink.current %} mega-menu__link--active{% endif %}"
                                 {% if grandchildlink.current %}
                                   aria-current="page"
                                 {% endif %}
                               >
-                                {{ grandchildlink.title | escape }}
+                                {{ grandchildlink.title | remove: "[icon]" | escape }}
+                                {% if grandchildlink.title contains '[icon]' %}
+                                  {%- render 'icon-arrow-chevron' -%}
+                                {% endif %}
                               </a>
                             </li>
                           {%- endfor -%}
@@ -71,26 +91,102 @@
                 {% for block in section.blocks %}
                   {% assign navigateMenu = block.settings.navigate_menu | downcase %}
                   {% if navigateMenu == menuHandel %}
-                    {%- if block.settings.img_megamenu != blank -%}
-                      <div class="img-megamenu">
+                    {%- if block.settings.img_megamenu != blank or block.settings.logo_list != false -%}
+                      <div class="img-megamenu pr-[1.6rem] {% if block.settings.position_image == 'bottom' %}page-width !px-[1.6rem] !pt-[2.4rem]{% endif %}">
                         <div class="img-megamenu__container">
-                          <div class="img-megamenu__content" >
-                            {{ block.settings.img_megamenu | image_url: width: 1440 | image_tag: alt: block.settings.img_megamenu.alt, width: block.settings.img_megamenu.width  }}
-                          </div>
-                          <div class="img-megamenu__content-text">
-                            {% if block.settings.title_megamenu != blank %}
-                              <div class="img-megamenu__title">
-                                <h3 style="color: {{ block.settings.text_color_mega }}">{{ block.settings.title_megamenu }}</h3>
+                          {%- if block.settings.logo_list == true -%}
+                            <div class="logo-list__container">
+                              {%- if block.settings.title_logo_list != blank -%}
+                                <div class="logo-list__title !text-[#036ccd] text-[16px] !leading-8 !px-0 !py-[10px] mb-[15px] border-b border-solid border-[#ddd]">
+                                  {{ block.settings.title_logo_list }}
+                                </div>
+                              {%- endif -%}
+                              <div class="logo-list__container-image flex gap-y-[1.6rem] flex-wrap"
+                              style="column-gap: {{ block.settings.space_between_logo }}px;
+                              --number-column-logo: calc(100%/{{ block.settings.number_column_logo }} - ({{ block.settings.number_column_logo | minus: 1 }}*{{ block.settings.space_between_logo }}px)/{{ block.settings.number_column_logo }} )"
+                              >
+                                {%- if block.settings.img_mega_1 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_1 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_1.alt, width: block.settings.img_mega_1.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_2 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_2 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_2.alt, width: block.settings.img_mega_2.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_3 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_3 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_3.alt, width: block.settings.img_mega_3.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_4 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_4 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_4.alt, width: block.settings.img_mega_4.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_5 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_5 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_5.alt, width: block.settings.img_mega_5.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_6 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_6 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_6.alt, width: block.settings.img_mega_6.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_7 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_7 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_7.alt, width: block.settings.img_mega_7.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_8 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_8 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_8.alt, width: block.settings.img_mega_8.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_9 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_9 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_9.alt, width: block.settings.img_mega_9.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_10 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_10 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_10.alt, width: block.settings.img_mega_10.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_11 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_11 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_11.alt, width: block.settings.img_mega_11.width  }}
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.img_mega_12 != blank -%}
+                                  <div class="logo-list__image">
+                                    {{ block.settings.img_mega_12 | image_url: width: 1440 | image_tag: alt: block.settings.img_mega_12.alt, width: block.settings.img_mega_12.width  }}
+                                  </div>
+                                {%- endif -%}
                               </div>
-                            {% endif %}
-                            {% if block.settings.btn_megamenu %}
-                              <{%- if block.settings.url_btn_megamenu != blank -%}a href="{{ block.settings.url_btn_megamenu }}"{%- else -%}span{%- endif -%}
-                                style="color: {{ block.settings.text_color_mega }}"
-                                class="img-megamenu__button">
-                                {{ block.settings.btn_megamenu }}
-                              </{%- if block.settings.url_btn_megamenu != blank -%}a{%- else -%}span{%- endif -%}>
-                            {% endif %}
-                          </div>
+                            </div>
+                          {%- endif -%}
+                          {%- if block.settings.logo_list != true -%}
+                            <div class="img-megamenu__content" >
+                              {{ block.settings.img_megamenu | image_url: width: 1440 | image_tag: alt: block.settings.img_megamenu.alt, width: block.settings.img_megamenu.width  }}
+                            </div>
+                            <div class="img-megamenu__content-text">
+                              {% if block.settings.title_megamenu != blank %}
+                                <div class="img-megamenu__title">
+                                  <h3 style="color: {{ block.settings.text_color_mega }}">{{ block.settings.title_megamenu }}</h3>
+                                </div>
+                              {% endif %}
+                              {% if block.settings.btn_megamenu %}
+                                <{%- if block.settings.url_btn_megamenu != blank -%}a href="{{ block.settings.url_btn_megamenu }}"{%- else -%}span{%- endif -%}
+                                  style="color: {{ block.settings.text_color_mega }}"
+                                  class="img-megamenu__button">
+                                  {{ block.settings.btn_megamenu }}
+                                </{%- if block.settings.url_btn_megamenu != blank -%}a{%- else -%}span{%- endif -%}>
+                              {% endif %}
+                            </div>
+                          {%- endif -%}
                         </div>
                       </div>                  
                     {%- endif -%} 

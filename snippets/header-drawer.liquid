@@ -3,6 +3,7 @@
 
   Usage:
   {% render 'header-drawer' %}
+  !hidden
 {% endcomment %}
 
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
@@ -45,7 +46,7 @@
                           </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
-                              <li>
+                              <li class="{% if childlink.title contains '[icon]' %}!hidden{% endif %}">
                                 {%- if childlink.links == blank -%}
                                   <a
                                     id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
@@ -84,7 +85,7 @@
                                         tabindex="-1"
                                       >
                                         {%- for grandchildlink in childlink.links -%}
-                                          <li>
+                                          <li class="{% if grandchildlink.title contains '[icon]' %}!hidden{% endif %}">
                                             <a
                                               id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                               href="{{ grandchildlink.url }}"

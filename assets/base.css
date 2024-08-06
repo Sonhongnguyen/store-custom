@@ -2808,7 +2808,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  padding: 1.2rem 2rem;
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
@@ -2831,7 +2831,7 @@ details[open] > .header__menu-item {
 }
 
 details[open]:hover > .header__menu-item {
-  text-decoration-thickness: 0.2rem;
+  text-decoration-thickness: 0.1rem;
 }
 
 details[open] > .header__menu-item .icon-caret {
@@ -2888,7 +2888,11 @@ details[open] > .header__menu-item .icon-caret {
 }
 
 .header__menu-item .icon-caret {
-  right: 0.8rem;
+  position: unset;
+  width: 14px;
+  height: 8px;
+  margin-top: 4px;
+  margin-left: 10px;
 }
 
 .header__submenu .icon-caret {

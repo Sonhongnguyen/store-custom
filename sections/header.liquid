@@ -694,6 +694,32 @@
       "name": "item",
       "settings": [
         {
+          "type": "range",
+          "id": "width_image_menu",
+          "min": 0,
+          "max": 75,
+          "step": 1,
+          "default": 40,
+          "unit": "%",
+          "label": "Width image"
+        },
+        {
+          "type": "select",
+          "id": "position_image",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ],
+          "default": "left",
+          "label": "Position layout image"
+        },
+        {
           "type": "text",
           "id": "navigate_menu",
           "label": "Navigate megaMenu"
@@ -721,8 +747,124 @@
         {
           "type": "color",
           "id": "text_color_mega",
-          "label": "Text color",
+          "label": "Text color overlay",
           "default": "#FFFFFF"
+        },
+        {
+          "type": "range",
+          "id": "number_colum_menu",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5,
+          "label": "Number column menu"
+        },
+        {
+          "type": "header",
+          "content": "Logo list"
+        },
+        {
+          "type": "checkbox",
+          "id": "logo_list",
+          "default": false,
+          "label": "Logo list",
+          "info": "Enable option to use logo list layout"
+        },
+        {
+          "type": "range",
+          "id": "number_column_logo",
+          "min": 1,
+          "max": 6,
+          "step": 1,
+          "default": 6,
+          "label": "Number column logo"
+        },
+        {
+          "type": "range",
+          "id": "space_between_logo",
+          "min": 4,
+          "max": 60,
+          "step": 1,
+          "default": 8,
+          "label": "Space between logo"
+        },
+        {
+          "type": "text",
+          "id": "title_logo_list",
+          "label": "Title logo list",
+          "default": "Popular Brand"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_1",
+          "label": "Image logo 1",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_2",
+          "label": "Image logo 2",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_3",
+          "label": "Image logo 3",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_4",
+          "label": "Image logo 4",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_5",
+          "label": "Image logo 5",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_6",
+          "label": "Image logo 6",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_7",
+          "label": "Image logo 7",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_8",
+          "label": "Image logo 8",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_9",
+          "label": "Image logo 9",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_10",
+          "label": "Image logo 10",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_11",
+          "label": "Image logo 11",
+          "info": "Active when logo list is enabled"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_mega_12",
+          "label": "Image logo 12",
+          "info": "Active when logo list is enabled"
         }
       ]
     }
