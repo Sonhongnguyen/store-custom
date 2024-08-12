@@ -28,7 +28,6 @@
 <style>
   header-drawer {
     justify-self: start;
-    margin-left: -1.2rem;
   }
 
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
@@ -47,6 +46,14 @@
 
   .menu-drawer-container {
     display: flex;
+  }
+
+  .header__content-search-mobile .search__input.field__input {
+    height: 40px;
+  }
+
+  .header__content-search-mobile .field__button {
+    height: 40px;
   }
 
   .list-menu {
@@ -160,7 +167,7 @@
   <header class="header header-container header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}
   !flex flex-wrap gap-[2.4rem]
   ">
-    <div class="header__main flex w-full items-center gap-[1.6rem]">
+    <div class="header__main flex w-full items-center gap-[1.6rem] justify-between lg:px-0 px-[16px]">
       {%- liquid
         if section.settings.menu != blank
           render 'header-drawer'
@@ -225,7 +232,7 @@
           </h1>
         {%- endif -%}
       {%- endif -%}
-      <div class="header__content-search flex-1">
+      <div class="header__content-search flex-1 lg:block hidden">
         {% render 'header-search', input_id: 'Search-In-Modal' %}
       </div>
 
@@ -289,9 +296,9 @@
         </div>
 
         {%- if shop.customer_accounts_enabled -%}
-          <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-            {% render 'icon-account' %}
-            <span class="visually-hidden">
+          <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset">
+            {% render 'icon-pet-account' %}
+            <span class="text-[1.6rem] leading-[1.2] text-white font-medium no-underline pl-3 lg:!block !hidden">
               {%- liquid
                 if customer
                   echo 'customer.account_fallback' | t
@@ -313,9 +320,9 @@
         <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
           {%- liquid
             if cart == empty
-              render 'icon-cart-empty'
+              render 'icon-cart-custom'
             else
-              render 'icon-cart'
+              render 'icon-cart-custom'
             endif
           -%}
           <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
@@ -330,7 +337,10 @@
         </a>
       </div>
     </div>
-    <div class="header__nav flex w-full justify-center">
+    <div class="header__content-search header__content-search-mobile flex-1 lg:hidden">
+      {% render 'header-search', input_id: 'Search-In-Modal' %}
+    </div>
+    <div class="header__nav lg:flex hidden w-full justify-center">
       {%- liquid
         if section.settings.menu != blank
           if section.settings.menu_type_desktop == 'dropdown'

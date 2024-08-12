@@ -13,11 +13,34 @@
       aria-label="{{ 'sections.header.menu' | t }}"
     >
       <span>
-        {% render 'icon-hamburger' %}
-        {% render 'icon-close' %}
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_57_10)">
+          <path d="M1.44922 9.96973H18" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          <path d="M1.44922 17.4697H18" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          <path d="M1.44922 2.46973H18" stroke="white" stroke-width="3" stroke-linecap="round"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_57_10">
+          <rect width="20" height="20" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>                  
       </span>
     </summary>
-    <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
+    <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }} !bg-white">
+      <span class="close-menu-drawer">
+        <svg onclick="document.querySelector('#Details-menu-drawer-container summary').click()"
+           width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_55_2)">
+          <path d="M0.57136 0.57136C0.928556 0.214272 1.41295 0.0136719 1.91803 0.0136719C2.4231 0.0136719 2.9075 0.214272 3.26469 0.57136L9.99993 7.3066L16.7352 0.57136C17.0944 0.224392 17.5756 0.0324032 18.075 0.0367431C18.5744 0.0410829 19.0521 0.241405 19.4053 0.594563C19.7585 0.947721 19.9588 1.42546 19.9631 1.92488C19.9675 2.4243 19.7755 2.90545 19.4285 3.26469L12.6933 9.99993L19.4285 16.7352C19.7755 17.0944 19.9675 17.5756 19.9631 18.075C19.9588 18.5744 19.7585 19.0521 19.4053 19.4053C19.0521 19.7585 18.5744 19.9588 18.075 19.9631C17.5756 19.9675 17.0944 19.7755 16.7352 19.4285L9.99993 12.6933L3.26469 19.4285C2.90545 19.7755 2.4243 19.9675 1.92488 19.9631C1.42546 19.9588 0.947721 19.7585 0.594563 19.4053C0.241405 19.0521 0.0410829 18.5744 0.0367431 18.075C0.0324032 17.5756 0.224392 17.0944 0.57136 16.7352L7.3066 9.99993L0.57136 3.26469C0.214272 2.9075 0.0136719 2.4231 0.0136719 1.91803C0.0136719 1.41295 0.214272 0.928556 0.57136 0.57136Z" fill="#949494" stroke="#949494" stroke-width="0.0625"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_55_2">
+          <rect width="20" height="20" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>          
+      </span>
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
@@ -31,7 +54,6 @@
                         class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
                       >
                         {{ link.title | escape }}
-                        {% render 'icon-arrow' %}
                         {% render 'icon-caret' %}
                       </summary>
                       <div
@@ -41,7 +63,7 @@
                       >
                         <div class="menu-drawer__inner-submenu">
                           <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
-                            {% render 'icon-arrow' %}
+                            {% render 'icon-caret' %}
                             {{ link.title | escape }}
                           </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
@@ -65,7 +87,6 @@
                                       class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                     >
                                       {{ childlink.title | escape }}
-                                      {% render 'icon-arrow' %}
                                       {% render 'icon-caret' %}
                                     </summary>
                                     <div
@@ -76,7 +97,7 @@
                                         class="menu-drawer__close-button link link--text focus-inset"
                                         aria-expanded="true"
                                       >
-                                        {% render 'icon-arrow' %}
+                                        {% render 'icon-caret' %}
                                         {{ childlink.title | escape }}
                                       </button>
                                       <ul

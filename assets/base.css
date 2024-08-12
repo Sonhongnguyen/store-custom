@@ -208,10 +208,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   list-style: none;
 }
 
-.hidden {
-  display: none !important;
-}
-
 .visually-hidden {
   position: absolute !important;
   overflow: hidden;
@@ -2575,10 +2571,20 @@ product-info .loading__spinner:not(.hidden) ~ *,
   vertical-align: middle;
 }
 
-.header__icon,
-.header__icon--cart .icon {
-  height: 4.4rem;
+.header__icon .icon.icon-account {
+  height: 2.4rem;
   width: 4.4rem;
+}
+.header__icon--account {
+  margin-right: 16px;
+}
+.header__icon {
+  padding: 0;
+  text-decoration: none;
+}
+.header__icon--cart .icon {
+  height: 2.4rem;
+  width: 2.4rem;
   padding: 0;
 }
 

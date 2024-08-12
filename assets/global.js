@@ -22,42 +22,50 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   summary.parentElement.addEventListener('keyup', onKeyUpEscape);
 });
 
-const trapFocusHandlers = {};
+const trapFocusHandlers = {
+  focusin: null,
+  focusout: null,
+  keydown: null
+};
 
 function trapFocus(container, elementToFocus = container) {
-  var elements = getFocusableElements(container);
-  var first = elements[0];
-  var last = elements[elements.length - 1];
+  if (!container || !elementToFocus) {
+    return;
+  }
 
-  removeTrapFocus();
+  const elements = getFocusableElements(container);
+  if (elements.length === 0) {
+    return;
+  }
+
+  const first = elements[0];
+  const last = elements[elements.length - 1];
+
+  removeTrapFocus(); // Dọn dẹp các trình xử lý trước đó
 
   trapFocusHandlers.focusin = (event) => {
-    if (event.target !== container && event.target !== last && event.target !== first) return;
-
+    if (event.target !== container && !elements.includes(event.target)) return;
     document.addEventListener('keydown', trapFocusHandlers.keydown);
   };
 
-  trapFocusHandlers.focusout = function () {
+  trapFocusHandlers.focusout = () => {
     document.removeEventListener('keydown', trapFocusHandlers.keydown);
   };
 
-  trapFocusHandlers.keydown = function (event) {
-    if (event.code.toUpperCase() !== 'TAB') return; // If not TAB key
-    // On the last focusable element and tab forward, focus the first element.
+  trapFocusHandlers.keydown = (event) => {
+    if (event.code.toUpperCase() !== 'TAB') return; // Chỉ xử lý phím Tab
+
     if (event.target === last && !event.shiftKey) {
       event.preventDefault();
       first.focus();
-    }
-
-    //  On the first focusable element and tab backward, focus the last element.
-    if ((event.target === container || event.target === first) && event.shiftKey) {
+    } else if ((event.target === container || event.target === first) && event.shiftKey) {
       event.preventDefault();
       last.focus();
     }
   };
 
-  document.addEventListener('focusout', trapFocusHandlers.focusout);
-  document.addEventListener('focusin', trapFocusHandlers.focusin);
+  container.addEventListener('focusin', trapFocusHandlers.focusin);
+  container.addEventListener('focusout', trapFocusHandlers.focusout);
 
   elementToFocus.focus();
 
@@ -69,6 +77,16 @@ function trapFocus(container, elementToFocus = container) {
     elementToFocus.setSelectionRange(0, elementToFocus.value.length);
   }
 }
+
+function removeTrapFocus() {
+  // Xóa các trình xử lý sự kiện nếu container đã được xác định
+  if (container) {
+    container.removeEventListener('focusin', trapFocusHandlers.focusin);
+    container.removeEventListener('focusout', trapFocusHandlers.focusout);
+  }
+  document.removeEventListener('keydown', trapFocusHandlers.keydown);
+}
+
 
 // Here run the querySelector to figure out if the browser supports :focus-visible or not and run code based on it.
 try {
@@ -396,9 +414,9 @@ class MenuDrawer extends HTMLElement {
       }
     } else {
       setTimeout(() => {
-        detailsElement.classList.add('menu-opening');
+        detailsElement.classList.toggle('menu-opening');
         summaryElement.setAttribute('aria-expanded', true);
-        parentMenuElement && parentMenuElement.classList.add('submenu-open');
+        parentMenuElement && parentMenuElement.classList.toggle('submenu-open');
         !reducedMotion || reducedMotion.matches
           ? addTrapFocus()
           : summaryElement.nextElementSibling.addEventListener('transitionend', addTrapFocus);

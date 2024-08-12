@@ -29,10 +29,10 @@ menu-drawer > details[open] > summary::before {
   position: absolute;
   transform: translateX(-100%);
   visibility: hidden;
-  z-index: 3;
+  z-index: 9;
   left: 0;
-  top: 100%;
-  width: 100%;
+  top: 0%;
+  width: 80%;
   padding: 0;
   background-color: rgb(var(--color-background));
   overflow-x: hidden;
@@ -90,7 +90,10 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__navigation {
-  padding: 3rem 0;
+  padding: 0;
+  border-width: 1px 0;
+  border-color: #ddd;
+  border-style: solid;
 }
 
 .menu-drawer__inner-submenu {
@@ -118,7 +121,12 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item {
   padding: 1.1rem 3rem;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  color: #666666 !important;
+}
+.menu-drawer__navigation .link--text {
+  color: #666666 !important;
+  border-bottom: 1px solid #ddd;
 }
 
 .no-js .menu-drawer__menu-item {
@@ -131,6 +139,16 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .no-js .menu-drawer__submenu .menu-drawer__submenu .menu-drawer__menu-item {
   padding-left: 9rem;
+}
+
+.menu-drawer summary.menu-drawer__menu-item svg.icon.icon-caret {
+  display: block;
+  position: unset;
+  width: 16px;
+  height: 8px;
+  margin-top: 2px;
+  margin-left: 24px;
+  transform: rotate(-90deg);
 }
 
 .menu-drawer summary.menu-drawer__menu-item {
@@ -172,7 +190,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: rgb(var(--color-background));
+  background-color: #fff;
   z-index: 1;
   transform: translateX(100%);
   visibility: hidden;
@@ -188,7 +206,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   text-decoration: none;
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   width: 100%;
   background-color: transparent;
   font-family: var(--font-body-family);
@@ -200,9 +218,11 @@ details[open].menu-opening > .menu-drawer__submenu {
   display: none;
 }
 
-.menu-drawer__close-button .icon-arrow {
-  transform: rotate(180deg);
+.menu-drawer__close-button .icon-caret {
+  transform: rotate(90deg);
   margin-right: 1rem;
+  width: 16px;
+  height: 8px;
 }
 
 .menu-drawer__utility-links {
@@ -235,6 +255,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   font-size: 1.4rem;
   color: rgb(var(--color-foreground));
   margin-bottom: 0;
+  color: #666666;
 }
 
 .menu-drawer__utility-links:has(.menu-drawer__localization) .menu-drawer__account {
@@ -245,6 +266,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   height: 2rem;
   width: 2rem;
   margin-right: 1rem;
+  stroke: #666666;
 }
 
 .menu-drawer__account:hover .icon-account {
@@ -262,4 +284,20 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer .list-social__link {
   padding: 1.1rem 1.1rem;
+}
+
+.close-menu-drawer {
+  width: 100%;
+  height: 46px;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+.close-menu-drawer svg {
+  width: 16px;
+  height: 20px;
+  stroke: #000;
+}
+.menu-drawer::-webkit-scrollbar {
+  display: none;
 }
