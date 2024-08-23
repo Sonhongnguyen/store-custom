@@ -158,17 +158,23 @@
         "settings": {
         }
       },
-      "e6320401-efe0-4706-86f9-1c8ac3c7070e": {
-        "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd-ssr\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+      "16881471024131275657": {
+        "type": "shopify:\/\/apps\/searchanise-search-filter\/blocks\/app-embed\/d8f24ada-02b1-458a-bbeb-5bf16d5c921e",
         "disabled": false,
         "settings": {
-          "templateId": "YMS6iMaVS7"
         }
       },
       "11735689235857492391": {
         "type": "shopify:\/\/apps\/algolia-search-and-discovery\/blocks\/autocomplete\/57bb7f86-d5fe-4d43-96ca-3953324494cf",
-        "disabled": false,
+        "disabled": true,
         "settings": {
+        }
+      },
+      "e6320401-efe0-4706-86f9-1c8ac3c7070e": {
+        "type": "shopify:\/\/apps\/boost-ai-search-discovery\/blocks\/boost-sd-ssr\/7fc998ae-a150-4367-bab8-505d8a4503f7",
+        "disabled": true,
+        "settings": {
+          "templateId": "YMS6iMaVS7"
         }
       }
     },
