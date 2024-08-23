@@ -31,18 +31,6 @@
     },
     "3380ccb7-8c69-4905-88e9-352046882304": {
       "type": "apps",
-      "blocks": {
-        "algolia_search_and_discovery_instantsearch_VNG4Cx": {
-          "type": "shopify:\/\/apps\/algolia-search-and-discovery\/blocks\/instantsearch\/57bb7f86-d5fe-4d43-96ca-3953324494cf",
-          "settings": {
-            "disable_skeleton_loader": false,
-            "custom_skeleton_mockup": ""
-          }
-        }
-      },
-      "block_order": [
-        "algolia_search_and_discovery_instantsearch_VNG4Cx"
-      ],
       "settings": {
         "include_margins": true
       }
