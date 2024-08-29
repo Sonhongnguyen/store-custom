@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.9 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -735,11 +735,6 @@ video {
 .\!bg-white {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
-}
-
-.bg-\[\#7d6161\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(125 97 97 / var(--tw-bg-opacity));
 }
 
 .bg-white {

@@ -316,7 +316,11 @@
               {% render block %}
           {%- endcase -%}
         {%- endfor -%}
-
+        <a href="#swym-wishlist" class="swym-wishlist" style="width: 24px; height: 24px; margin-right: 12px;">
+          <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+          </svg>  
+        </a>
         <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
           {%- liquid
             if cart == empty
