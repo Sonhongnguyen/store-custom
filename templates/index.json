@@ -311,8 +311,8 @@
         "article_aHdfD8"
       ],
       "settings": {
-        "heading_text": "News",
-        "btn_text": "More news",
+        "heading_text": "",
+        "btn_text": "",
         "btn_url": "",
         "padding_top": 0,
         "padding_bottom": 0,
