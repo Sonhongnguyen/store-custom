@@ -280,6 +280,46 @@
         "space_bottom_mb": 12
       }
     },
+    "news_FdnKcr": {
+      "type": "news",
+      "blocks": {
+        "article_htUJnU": {
+          "type": "article",
+          "settings": {
+            "article": "news\/6-great-innovative-litter-box-options-for-your-cat",
+            "btn_article": "Read more"
+          }
+        },
+        "article_7VwkNN": {
+          "type": "article",
+          "settings": {
+            "article": "news\/5-tips-for-teaching-your-dog-how-to-swim",
+            "btn_article": "Read more"
+          }
+        },
+        "article_aHdfD8": {
+          "type": "article",
+          "settings": {
+            "article": "news\/12-safety-tips-for-boating-with-dogs",
+            "btn_article": "Read more"
+          }
+        }
+      },
+      "block_order": [
+        "article_htUJnU",
+        "article_7VwkNN",
+        "article_aHdfD8"
+      ],
+      "settings": {
+        "heading_text": "News",
+        "btn_text": "More news",
+        "btn_url": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 0
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -369,6 +409,7 @@
   "order": [
     "hero_section_eMcHyw",
     "collection_feature_cs_GBdJkA",
+    "news_FdnKcr",
     "image_banner",
     "featured_collection",
     "17241490825d4767d6"
