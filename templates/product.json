@@ -25,6 +25,18 @@
             "margin_top_custom_text": 0
           }
         },
+        "sku_WNQj3y": {
+          "type": "sku",
+          "settings": {
+            "title_sku": "IB#",
+            "text_style": "body"
+          }
+        },
+        "judge_me_reviews_preview_badge_VXAMcE": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -58,23 +70,19 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "judge_me_reviews_preview_badge_VXAMcE": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
         }
       },
       "block_order": [
         "title",
         "vendor",
+        "sku_WNQj3y",
+        "judge_me_reviews_preview_badge_VXAMcE",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "judge_me_reviews_preview_badge_VXAMcE"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
