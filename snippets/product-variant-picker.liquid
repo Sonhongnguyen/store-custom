@@ -13,7 +13,7 @@
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
-      class="no-js-hidden"
+      class="no-js-hidden variant-radios"
       data-section="{{ section.id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
@@ -34,7 +34,7 @@
   {%- else -%}
     <variant-selects
       id="variant-selects-{{ section.id }}"
-      class="no-js-hidden"
+      class="no-js-hidden variant-selects"
       data-section="{{ section.id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}

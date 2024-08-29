@@ -6,7 +6,7 @@
 
 .loading__spinner {
   width: 1.8rem;
-  display: inline-block;
+  display: none;
 }
 
 .spinner {
