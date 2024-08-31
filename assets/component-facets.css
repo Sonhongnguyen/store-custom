@@ -49,6 +49,7 @@
   display: block;
   color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
+  font-weight: 600;
   margin: 0 2rem 0 0;
 }
 
@@ -121,6 +122,13 @@
   }
 }
 
+
+.select select.facet-filters__sort,
+.select select.facet-filters__sort:hover {
+  outline: none;
+  box-shadow: none;
+  padding-inline: 18px;
+}
 .facet-filters__sort,
 .facet-filters__sort:hover {
   box-shadow: none;
@@ -186,6 +194,7 @@
   color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
   margin: -1.5rem 2rem 0 0;
+  font-weight: 600;
 }
 
 .facets__reset {
@@ -201,6 +210,7 @@
   font-size: 1.4rem;
   padding: 0 1.75rem 0 0;
   margin-bottom: 1.5rem;
+  font-weight: 600;
 }
 
 .facets__disclosure fieldset {
@@ -224,8 +234,7 @@
 }
 
 .facets__summary:hover .facets__summary-label {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+  text-decoration: none;
 }
 
 .facets__and-helptext {
@@ -319,7 +328,7 @@
 /* Hover/focus state */
 .facets-layout-list .facets__label:hover .facet-checkbox__text,
 .facets-layout-list input:focus ~ .facet-checkbox__text {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .facets-layout-grid > * {

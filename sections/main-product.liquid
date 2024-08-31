@@ -204,8 +204,12 @@
                     {% render 'icon-caret' %}
                   </summary>
                   <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                    {{ block.settings.content }}
-                    {{ block.settings.page.content }}
+                    {% if block.settings.content_description %}
+                      {{  product.description }}
+                    {% else %}
+                      {{ block.settings.content }}
+                      {{ block.settings.page.content }}
+                    {% endif %}
                   </div>
                 </details>
               </div>
@@ -911,6 +915,12 @@
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
         },
         {
+          "type": "checkbox",
+          "id": "content_description",
+          "label": "Content description",
+          "default": false
+        },
+        {
           "type": "select",
           "id": "icon",
           "options": [
@@ -1091,7 +1101,7 @@
               "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__44.label"
             }
           ],
-          "default": "check_mark",
+          "default": "none",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
         },
         {

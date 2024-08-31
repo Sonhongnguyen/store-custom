@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "hero_section_eMcHyw": {
@@ -311,9 +302,366 @@
         "article_aHdfD8"
       ],
       "settings": {
-        "heading_text": "",
+        "heading_text": "NEWS",
         "btn_text": "",
         "btn_url": "",
+        "font_size_title": 16,
+        "line_height_title": 20,
+        "font_size_title_mb": 16,
+        "line_height_title_mb": 20,
+        "margin_bottom_title": 20,
+        "margin_bottom_title_mb": 16,
+        "font_size_content": 16,
+        "line_height_content": 20,
+        "font_size_content_mb": 16,
+        "line_height_content_mb": 20,
+        "margin_bottom_content": 20,
+        "margin_bottom_content_mb": 16,
+        "padding_top": 20,
+        "padding_bottom": 24,
+        "padding_top_mb": 24,
+        "padding_bottom_mb": 24
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "collection_feature_cs_LtFwf4": {
+      "type": "collection-feature-cs",
+      "blocks": {
+        "collection_DqhgLw": {
+          "type": "collection",
+          "settings": {
+            "collection": "flea-tick",
+            "title": ""
+          }
+        },
+        "collection_khHVED": {
+          "type": "collection",
+          "settings": {
+            "collection": "cat-treats",
+            "title": ""
+          }
+        },
+        "collection_zKB7dP": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_4Hx3xa": {
+          "type": "collection",
+          "settings": {
+            "collection": "flea-tick",
+            "title": ""
+          }
+        },
+        "collection_rigzcY": {
+          "type": "collection",
+          "settings": {
+            "collection": "dog-treats",
+            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "title": ""
+          }
+        },
+        "collection_NEAzPw": {
+          "type": "collection",
+          "settings": {
+            "collection": "flea-tick",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_DqhgLw",
+        "collection_khHVED",
+        "collection_zKB7dP",
+        "collection_4Hx3xa",
+        "collection_rigzcY",
+        "collection_NEAzPw"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "img_type": "rounder",
+        "collections_per_row_desktop": 6,
+        "collections_per_row_mobile": 3,
+        "space_between_items": 12,
+        "space_between_items_mb": 30,
+        "space_column_between_items": 12,
+        "space_column_between_items_mb": 30,
+        "title": "Top Categories",
+        "font_size_title": 30,
+        "font_size_title_mb": 30,
+        "align_heading_section": "left",
+        "font_size_item": 16,
+        "font_size_item_mb": 16,
+        "color_items": "#000000",
+        "space_top": 12,
+        "space_bottom": 12,
+        "space_top_mb": 12,
+        "space_bottom_mb": 12
+      }
+    },
+    "list_collection_UnpmdB": {
+      "type": "cs-list-collection",
+      "blocks": {
+        "list_collection_RaRKCU": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "custom",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
+            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "title": "",
+            "title_mb": "",
+            "button": "More",
+            "url_button": "",
+            "background_item": "#f4f4f4"
+          }
+        },
+        "list_collection_mQX7bk": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "custom",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
+            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "title": "",
+            "title_mb": "",
+            "button": "More",
+            "url_button": "",
+            "background_item": "#f4f4f4"
+          }
+        },
+        "list_collection_VJGPaq": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "custom",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
+            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "title": "",
+            "title_mb": "",
+            "button": "More",
+            "url_button": "",
+            "background_item": "#f4f4f4"
+          }
+        },
+        "list_collection_677Kzr": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "custom",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
+            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "title": "",
+            "title_mb": "",
+            "button": "More",
+            "url_button": "",
+            "background_item": "#f4f4f4"
+          }
+        },
+        "list_collection_Dk6xVh": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "custom",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
+            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "title": "",
+            "title_mb": "",
+            "button": "More",
+            "url_button": "",
+            "background_item": "#f4f4f4"
+          }
+        },
+        "list_collection_77fYBd": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "custom",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
+            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "title": "",
+            "title_mb": "",
+            "button": "More",
+            "url_button": "",
+            "background_item": "#f4f4f4"
+          }
+        }
+      },
+      "block_order": [
+        "list_collection_RaRKCU",
+        "list_collection_mQX7bk",
+        "list_collection_VJGPaq",
+        "list_collection_677Kzr",
+        "list_collection_Dk6xVh",
+        "list_collection_77fYBd"
+      ],
+      "settings": {
+        "title": "Top Brands",
+        "title_alignment": "left",
+        "image_ratio": "fixed",
+        "font_size_title_section": 28,
+        "line_height_title_section": 34,
+        "font_size_title_section_mb": 24,
+        "line_height_title_section_mb": 29,
+        "margin_bottom_title_section": 32,
+        "margin_bottom_title_section_mb": 24,
+        "color_title_section": "#000000",
+        "content_position": "between",
+        "font_size_title": 18,
+        "line_height_title": 24,
+        "font_size_title_mb": 14,
+        "line_height_title_mb": 21,
+        "margin_bottom_title": 8,
+        "margin_bottom_title_mb": 8,
+        "color_content_section": "#000000",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "padding_top_mb": 20,
+        "padding_bottom_mb": 20
+      }
+    },
+    "cs_feature_product_EJh8xy": {
+      "type": "cs-feature-product",
+      "blocks": {
+        "list_collection_D7yURA": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "product",
+            "collection": "",
+            "product": "earth-animal-wisdom-air-dried-dog-food-from-the-land",
+            "title": "<p>Title item<\/p>",
+            "title_mb": "<p>Title item<\/p>",
+            "url_button": "",
+            "background_item": "rgba(0,0,0,0)"
+          }
+        },
+        "list_collection_eKAamA": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "product",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-venison-copy-1",
+            "title": "<p>Title item<\/p>",
+            "title_mb": "<p>Title item<\/p>",
+            "url_button": "",
+            "background_item": "rgba(0,0,0,0)"
+          }
+        },
+        "list_collection_Px9i4d": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "product",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
+            "title": "<p>Title item<\/p>",
+            "title_mb": "<p>Title item<\/p>",
+            "url_button": "",
+            "background_item": "rgba(0,0,0,0)"
+          }
+        },
+        "list_collection_HfBJEk": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "product",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken-copy",
+            "title": "<p>Title item<\/p>",
+            "title_mb": "<p>Title item<\/p>",
+            "url_button": "",
+            "background_item": "rgba(0,0,0,0)"
+          }
+        },
+        "list_collection_hFJJnk": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "product",
+            "collection": "",
+            "product": "earth-animal-wisdom-air-dried-dog-food-from-the-land-copy",
+            "title": "<p>Title item<\/p>",
+            "title_mb": "<p>Title item<\/p>",
+            "url_button": "",
+            "background_item": "rgba(0,0,0,0)"
+          }
+        },
+        "list_collection_T6jpwU": {
+          "type": "list_collection",
+          "settings": {
+            "block_type": "product",
+            "collection": "",
+            "product": "ziwi-peak-original-series-pate-wet-cat-food-venison-copy",
+            "title": "<p>Title item<\/p>",
+            "title_mb": "<p>Title item<\/p>",
+            "url_button": "",
+            "background_item": "#F4F4F4"
+          }
+        }
+      },
+      "block_order": [
+        "list_collection_D7yURA",
+        "list_collection_eKAamA",
+        "list_collection_Px9i4d",
+        "list_collection_HfBJEk",
+        "list_collection_hFJJnk",
+        "list_collection_T6jpwU"
+      ],
+      "settings": {
+        "number_slide": 4.5,
+        "number_slide_mb": 1.5,
+        "spacing_slide": 4,
+        "title": "Title",
+        "title_alignment": "left",
+        "font_size_title_section": 28,
+        "line_height_title_section": 34,
+        "font_size_title_section_mb": 24,
+        "line_height_title_section_mb": 29,
+        "margin_bottom_title_section": 32,
+        "margin_bottom_title_section_mb": 24,
+        "color_title_section": "#000000",
+        "font_size_title": 18,
+        "line_height_title": 24,
+        "font_size_title_mb": 14,
+        "line_height_title_mb": 21,
+        "margin_bottom_title": 8,
+        "margin_bottom_title_mb": 8,
+        "color_content_section": "#000000",
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_top_mb": 0,
@@ -360,32 +708,81 @@
         "show_text_below": false
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "rich_text_tYqpbB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gLgzwY": {
+          "type": "heading",
+          "settings": {
+            "heading": "We're Experts In Pet Care.",
+            "heading_size": "h1"
+          }
+        },
+        "text_tTPzc9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>BaxterBoo.com is an online one-stop shop for Pet Parents. We provide a wide variety of products from small boutique brands to some of the world's largest pet brands. With an eye on organic, sustainable, and earth-friendly products, we strive to make sure your pet is happy and healthy.<br\/><br\/>We personally inspect every item we carry and only stock those products that we would give to our own four-legged friends. We take personal pride in ensuring that you're satisfied with your order and that you will always be able to find the perfect item for your pet with our best in class customer service team.<br\/><br\/>Find everything your pet needs such as healthcare, food, treats, clothing, grooming, pharmacy, veterinary diet, and more at BaxterBoo.com.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gLgzwY",
+        "text_tTPzc9"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 8
+      }
+    },
+    "block_banner_zqeaAN": {
+      "type": "block-banner",
+      "blocks": {
+        "block_HryNzK": {
+          "type": "block",
+          "settings": {
+            "media_type": "image",
+            "image_dsk": "shopify:\/\/shop_images\/photo-contest.png",
+            "image_mb": "shopify:\/\/shop_images\/photo-contest.png",
+            "title": "",
+            "description": "",
+            "button": "",
+            "url_button": "",
+            "url_item": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_HryNzK"
+      ],
+      "settings": {
+        "content_align": "top",
+        "block_type": "margin",
+        "stack_mobile_layout": false,
+        "font_size_title": 40,
+        "line_height_title": 44,
+        "font_size_title_mb": 24,
+        "line_height_title_mb": 29,
+        "margin_bottom_title": 16,
+        "margin_bottom_title_mb": 8,
+        "font_size_des": 16,
+        "line_height_des": 21,
+        "font_size_des_mb": 14,
+        "line_height_des_mb": 21,
+        "margin_bottom_des": 16,
+        "margin_bottom_des_mb": 8,
+        "color_content": "#F7F7F6",
+        "color_btn": "#F7F7F6",
+        "padding_top": 45,
+        "padding_bottom": 0,
+        "padding_top_mb": 32,
+        "padding_bottom_mb": 0,
+        "bg_overlay": "#000",
+        "opacity_overlay": 0,
+        "gardient_overlay": ""
       }
     },
     "17241490825d4767d6": {
@@ -410,8 +807,13 @@
     "hero_section_eMcHyw",
     "collection_feature_cs_GBdJkA",
     "news_FdnKcr",
-    "image_banner",
     "featured_collection",
+    "collection_feature_cs_LtFwf4",
+    "list_collection_UnpmdB",
+    "cs_feature_product_EJh8xy",
+    "image_banner",
+    "rich_text_tYqpbB",
+    "block_banner_zqeaAN",
     "17241490825d4767d6"
   ]
 }

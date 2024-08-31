@@ -8,21 +8,19 @@
         padding: {{ section.settings.padding_top_mb }}px 16px  {{ section.settings.padding_bottom_mb }}px;
     }
     .section-news--{{ section.id }} .news__heading-container {
-      margin-bottom: 20px;
+        margin-bottom: {{ section.settings.margin_bottom_heading_mb }}px;
     }
     .section-news--{{ section.id }} .news__heading h3 {
-      font-family: "Whitney", sans-serif;
-      font-size: 30px;
       font-weight: 600;
-      line-height: 101.1%;
       margin: 0;
+      font-size: {{ section.settings.font_size_heading_mb }}px;
+      line-height: {{ section.settings.line_height_heading_mb }}px;
       color: #000;
     }
     .section-news--{{ section.id }} .news__heading {
       margin-right: 10px;
     }
     .section-news--{{ section.id }} .news__btn a {
-      font-family: "Whitney Book", sans-serif;
       font-size: 18px;
       font-weight: 500;
       line-height: 101.1%;
@@ -57,37 +55,48 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;  
+        height: 100%;
+        border-radius: 8px;
     }
     .section-news--{{ section.id }} .article-img img{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: auto;    
+        height: auto;
+        aspect-ratio: 351 / 234;
+        object-fit: cover;
+        border-radius: 8px;
     }
     .section-news--{{ section.id }} .article-info h3 {
         color: #000;
-        font-family: "Whitney";
-        font-size: 24px;
+        font-size: {{ section.settings.font_size_title_mb }}px;
+        line-height: {{ section.settings.line_height_title_mb }}px;
         font-style: normal;
-        font-weight: 500;
-        line-height: 101.1%;
-        margin-bottom: 16px;
+        font-weight: 600;
+        margin-bottom: {{ section.settings.margin_bottom_title_mb }}px;
         max-width: 340px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .section-news--{{ section.id }} .article-info p,
     .section-news--{{ section.id }} .article-info p span,
     .section-news--{{ section.id }} .article-info .read-more-btn {
         color: #000;
-        font-family: "Whitney Book";
-        font-size: 18px;
-        font-style: normal;
+        font-size: {{ section.settings.font_size_content_mb }}px;
+        line-height: {{ section.settings.line_height_content_mb }}px;
         font-weight: 500;
-        line-height: 101.1%;
     }
     .section-news--{{ section.id }} .article-info p{
-        margin-bottom: 30px;
+        margin-bottom: {{ section.settings.margin_bottom_content_mb }}px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .section-news--{{ section.id }} .article-info .read-more-btn {
         text-decoration: underline;
@@ -105,11 +114,26 @@
             margin: auto;
             padding: {{ section.settings.padding_top }}px 30px  {{ section.settings.padding_bottom }}px;
         }
+        .section-news--{{ section.id }} .article-info h3 {
+            font-size: {{ section.settings.font_size_title }}px;
+            line-height: {{ section.settings.line_height_title }}px;
+            margin-bottom: {{ section.settings.margin_bottom_title }}px;
+        }
+        .section-news--{{ section.id }} .article-info p,
+        .section-news--{{ section.id }} .article-info p span,
+        .section-news--{{ section.id }} .article-info .read-more-btn {
+            font-size: {{ section.settings.font_size_content }}px;
+            line-height: {{ section.settings.line_height_content }}px;
+        }
         .section-news--{{ section.id }} .news__btn a svg {
             margin-bottom: 0;
         }
+        .section-news--{{ section.id }} .news__heading-container {
+            margin-bottom: {{ section.settings.margin_bottom_heading }}px;
+        }
         .section-news--{{ section.id }} .news__heading h3 {
-            font-size: 45px;
+            font-size: {{ section.settings.font_size_heading }}px;
+            line-height: {{ section.settings.line_height_heading }}px;
         }
         .section-news--{{ section.id }} .news-items {
             flex-direction: row;
@@ -125,11 +149,8 @@
         .section-news--{{ section.id }} .article-img {
             margin-bottom: 30px;
         }
-        .section-news--{{ section.id }} .article-info h3 {
-            margin-bottom: 15px;
-        }
         .section-news--{{ section.id }} .article-info p {
-            margin-bottom: 25px;
+            margin-bottom: {{ section.settings.margin_bottom_content }}px;
             max-width: 420px;
         }
         .section-news--{{ section.id }} .article-info {
@@ -210,6 +231,46 @@
                 "default": "News"
             },
             {
+                "type": "header",
+                "content": "custom heading"
+            },
+            {
+                "type": "number",
+                "id": "font_size_heading",
+                "label": "Size heading",
+                "default": 24
+            },
+            {
+                "type": "number",
+                "id": "line_height_heading",
+                "label": "Line Height heading",
+                "default": 32
+            },
+            {
+                "type": "number",
+                "id": "font_size_heading_mb",
+                "label": "Size heading Mobile",
+                "default": 18
+            },
+            {
+                "type": "number",
+                "id": "line_height_heading_mb",
+                "label": "Line Height heading Mobile",
+                "default": 24
+            },
+            {
+                "type": "number",
+                "id": "margin_bottom_heading",
+                "label": "Margin bottom heading",
+                "default": 24
+            },
+            {
+                "type": "number",
+                "id": "margin_bottom_heading_mb",
+                "label": "Margin bottom heading mobile",
+                "default": 24
+            },
+            {
                 "type": "text",
                 "id": "btn_text",
                 "label": "Text button",
@@ -219,6 +280,86 @@
                 "type": "url",
                 "id": "btn_url",
                 "label": "Button link"
+            },
+            {
+                "type": "header",
+                "content": "custom title"
+            },
+            {
+                "type": "number",
+                "id": "font_size_title",
+                "label": "Size title",
+                "default": 16
+            },
+            {
+                "type": "number",
+                "id": "line_height_title",
+                "label": "Line Height title",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "font_size_title_mb",
+                "label": "Size title Mobile",
+                "default": 16
+            },
+            {
+                "type": "number",
+                "id": "line_height_title_mb",
+                "label": "Line Height title Mobile",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "margin_bottom_title",
+                "label": "Margin bottom title",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "margin_bottom_title_mb",
+                "label": "Margin bottom title mobile",
+                "default": 16
+            },
+            {
+                "type": "header",
+                "content": "custom content"
+            },
+            {
+                "type": "number",
+                "id": "font_size_content",
+                "label": "Size content",
+                "default": 16
+            },
+            {
+                "type": "number",
+                "id": "line_height_content",
+                "label": "Line Height content",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "font_size_content_mb",
+                "label": "Size content Mobile",
+                "default": 16
+            },
+            {
+                "type": "number",
+                "id": "line_height_content_mb",
+                "label": "Line Height content Mobile",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "margin_bottom_content",
+                "label": "Margin bottom content",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "margin_bottom_content_mb",
+                "label": "Margin bottom content mobile",
+                "default": 16
             },
             {
                 "type": "header",

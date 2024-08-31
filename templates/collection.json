@@ -1,7 +1,18 @@
 {
   "sections": {
+    "cs_bredcrumb_CW6xzw": {
+      "type": "cs-bredcrumb",
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_top_mb": 36,
+        "padding_bottom_mb": 36
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -12,25 +23,68 @@
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 16,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
         "enable_filtering": true,
-        "filter_type": "horizontal",
+        "filter_type": "vertical",
         "enable_sorting": true,
         "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_FJ4pqi": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_n8jaCp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About Our",
+            "icon": "none",
+            "row_content": "<p>Catnip works like magic on our feline friends! It’s effect on cats is matched only by its versatility. Whether you’re simply supplying it as a treat for your cat or incorporating it into your cat’s toys, catnip is a safe and non-addictive way to stimulate your cat into a state of pure excitement and bliss.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_b7e4LD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "About Our",
+            "icon": "none",
+            "row_content": "<p>Catnip works like magic on our feline friends! It’s effect on cats is matched only by its versatility. Whether you’re simply supplying it as a treat for your cat or incorporating it into your cat’s toys, catnip is a safe and non-addictive way to stimulate your cat into a state of pure excitement and bliss. <a href=\"https:\/\/www.baxterboo.com\/p.cfm\/meowijuana-paw-natural-og-ground-catnip-\/\" target=\"_self\" title=\"Meowijuana organic catnip\">Meowijuana organic catnip<\/a> is available in airtight catnip bud jars along with a variety of <a href=\"https:\/\/www.baxterboo.com\/l.cfm\/cat-treats_catnip-pet-grass\/natural\/?&s=meowijuana%20blend\" target=\"_self\" title=\"catnip blends\">catnip blends<\/a> with different effects. <a href=\"https:\/\/www.baxterboo.com\/l.cfm\/cat-treats_crunchy-treats\/meowijuana\/\" target=\"_self\" title=\"Crunchie Munchie Cat Treats\">Crunchie Munchie Cat Treats<\/a> are catnip filled treats that combine with valerian root and irresistible flavors that satisfy your cat in more ways than one. <a href=\"https:\/\/www.baxterboo.com\/p.cfm\/kong-naturals-premium-catnip\/\" target=\"_self\" title=\"KONG Naturals Premium Catnip\">KONG Naturals Premium Catnip<\/a> is naturally grown in North America and offers high potency with locked-in freshness, so you know you’re giving your kitty some quality catnip! If you’re traveling with an anxious cat, <a href=\"https:\/\/www.baxterboo.com\/p.cfm\/kong-naturals-premium-catnip-spray\/\" target=\"_self\" title=\"catnip sprays\">catnip sprays<\/a> are both convenient and potent when it comes to soothing them on the go. Catnip isn’t the only grass your kitty would be interested in. <a href=\"https:\/\/www.baxterboo.com\/p.cfm\/turbo-scratcher-cat-grass\/\" target=\"_self\" title=\"Cat grass\">Cat grass<\/a> allows cats to play and munch on grass in a healthy way. Entice your cat with high-quality catnip and <a href=\"https:\/\/www.baxterboo.com\/l.cfm\/cat-toys_catnip-toys\/\" target=\"_self\" title=\"catnip toys\">catnip toys<\/a> when you shop BaxterBoo’s collection of <a href=\"https:\/\/www.baxterboo.com\/l.cfm\/cat-treats\/\" target=\"_self\" title=\"cat treats\">cat treats<\/a>, <a href=\"https:\/\/www.baxterboo.com\/l.cfm\/cat-toys\/\" target=\"_self\" title=\"cat toys\">cat toys<\/a> and other <a href=\"https:\/\/www.baxterboo.com\/shop-for-cats.cfm\/\" target=\"_self\" title=\"cat supplies\">cat supplies<\/a>!<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_n8jaCp",
+        "collapsible_row_b7e4LD"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "About Our Catnip & Pet Grass",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "section",
+        "color_scheme": "",
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
+    "cs_bredcrumb_CW6xzw",
     "banner",
-    "product-grid"
+    "product-grid",
+    "collapsible_content_FJ4pqi"
   ]
 }

@@ -1,0 +1,326 @@
+<style>
+    .img-width-text-{{ section.id }} {
+        padding: {{ section.settings.padding_top_mb }}px {{ section.settings.padding_leftright_mb }}px  {{ section.settings.padding_bottom_mb }}px;
+        {% if section.settings.content_layout_mb == 'bottom' %}
+            flex-direction: column-reverse;
+        {% else %}
+            flex-direction: column;
+        {% endif %}
+        gap: {{ section.settings.gap_content_mb }}px;
+        align-items: center;
+    }
+    .img-width-text-{{ section.id }} .img-width-text__text p  {
+        font-weight: 500;
+        font-size: {{ section.settings.font_size_content_mb }}px;
+        line-height: {{ section.settings.line_height_content_mb }}px;
+        color: {{ section.settings.color_content }};
+    }
+    .img-width-text-{{ section.id }} .img-width-text__text  {
+        margin-bottom: {{ section.settings.margin_bottom_content_mb }}px;
+    }
+    .img-width-text-{{ section.id }} .img-width-text__link a {
+        font-weight: 500;
+        font-size: {{ section.settings.font_size_button_mb }}px;
+        line-height: {{ section.settings.line_height_button_mb }}px;
+        color: {{ section.settings.color_content }};
+    }
+    .img-width-text-{{ section.id }} .icon-btn {
+        margin-left: 8px;
+    }
+    .img-width-text-{{ section.id }} .img-width-text__text.text-desktop {
+        display: none;
+    }
+    .img-width-text-{{ section.id }} .img-width-text__text.text-mobile {
+        display: block;
+    }
+    @media(min-width:769px) {
+        .img-width-text-{{ section.id }} {
+            max-width: 1440px;
+            margin: auto;
+            padding: {{ section.settings.padding_top }}px 100px  {{ section.settings.padding_bottom }}px;
+        }
+        .img-width-text-{{ section.id }} .icon-btn {
+            margin-left: 9px;
+        }
+        .img-width-text-{{ section.id }} .img-width-text__text p  {
+            font-size: {{ section.settings.font_size_content }}px;
+            line-height: {{ section.settings.line_height_content }}px;
+        }
+        .img-width-text-{{ section.id }} .img-width-text__text  {
+            margin-bottom: {{ section.settings.margin_bottom_content }}px;
+        }
+        .img-width-text-{{ section.id }} .img-width-text__link a {
+            font-size: {{ section.settings.font_size_button }}px;
+            line-height: {{ section.settings.line_height_button }}px;
+        }
+    }
+    @media(min-width:1024px) {
+        .img-width-text-{{ section.id }} .img-width-text__image {
+            width: 40%;
+        }
+        .img-width-text-{{ section.id }} .img-width-text__content {
+            width: calc(60% - {{ section.settings.gap_content }}px);
+        }
+        .img-width-text-{{ section.id }} {
+            {% if section.settings.content_layout == 'left' %}
+                flex-direction: row-reverse;
+            {% else %}
+                flex-direction: row;
+            {% endif %}
+            gap: {{ section.settings.gap_content }}px;
+            padding: {{ section.settings.padding_top }}px {{ section.settings.padding_leftright }}px  {{ section.settings.padding_bottom }}px;
+        }
+        .img-width-text-{{ section.id }} .img-width-text__text.text-desktop {
+            display: block;
+        }
+        .img-width-text-{{ section.id }} .img-width-text__text.text-mobile {
+            display: none;
+        }
+    }
+</style>
+<div class="img-width-text-{{ section.id }} flex" style="background: {{ section.settings.bg_section }};"> 
+    <div class="img-width-text__image">
+        <a href="{{ section.settings.link_url }}">
+        {% if section.settings.img_section != blank %}
+            {{ section.settings.img_section | image_url: width: '1024x1024' | image_tag: loading: 'lazy' , alt: section.settings.img_section.alt }}
+        {% else %}
+            {{ 'image' | placeholder_svg_tag: 'media__placeholder' }}
+        {% endif %}
+        </a>
+    </div>
+    <div class="img-width-text__content flex items-center">
+        <div class="block">
+            <div class="img-width-text__text text-desktop">
+                {% if section.settings.richtext != blank %}
+                    {{ section.settings.richtext }}
+                {% endif %}
+            </div>
+            <div class="img-width-text__text text-mobile">
+                {% if section.settings.richtext_mb != blank %}
+                    {{ section.settings.richtext_mb }}
+                {% endif %}
+            </div>
+            <div class="img-width-text__link">
+                {% if section.settings.btn_text != blank %}
+                    <a class="flex items-center" href="{{ section.settings.link_url }}">
+                        {{ section.settings.btn_text }} 
+                        <svg class="icon-btn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <mask id="mask0_14_359" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                <rect width="24" height="24" fill="#D9D9D9"/>
+                            </mask>
+                            <g mask="url(#mask0_14_359)">
+                                <path d="M14.1 17.3L13.4 16.6L17.475 12.5H4.60001V11.5H17.475L13.4 7.40001L14.1 6.70001L19.4 12L14.1 17.3Z" fill="black"/>
+                            </g>
+                        </svg>
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+    {
+        "name": "Image with text",
+        "settings": [
+            {
+                "type": "select",
+                "id": "content_layout",
+                "options": [
+                    {
+                    "value": "left",
+                    "label": "Left"
+                    },
+                    {
+                    "value": "right",
+                    "label": "Right"
+                    }
+                ],
+                "default": "right",
+                "label": "Content Layout"
+            },
+            {
+                "type": "select",
+                "id": "content_layout_mb",
+                "options": [
+                    {
+                    "value": "top",
+                    "label": "Top"
+                    },
+                    {
+                    "value": "bottom",
+                    "label": "Bottom"
+                    }
+                ],
+                "default": "bottom",
+                "label": "Layout Content mobile"
+            },
+            {
+                "type": "image_picker",
+                "id": "img_section",
+                "label": "Image section"
+            },
+            {
+                "type": "richtext",
+                "id": "richtext",
+                "label": "Richtext",
+                "default": "<p>Carmencita was established in 1923 and was the first Spanish company to bottle spices in glass jars.</p>"
+            },
+            {
+                "type": "richtext",
+                "id": "richtext_mb",
+                "label": "Richtext mobile   ",
+                "default": "<p>Carmencita was established in 1923 and was the first Spanish company to bottle spices in glass jars.</p>"
+            },
+            {
+                "type": "header",
+                "content": "custom content"
+            },
+            {
+                "type": "number",
+                "id": "font_size_content",
+                "label": "Size content",
+                "default": 16
+            },
+            {
+                "type": "number",
+                "id": "line_height_content",
+                "label": "Line Height content",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "font_size_content_mb",
+                "label": "Size content Mobile",
+                "default": 16
+            },
+            {
+                "type": "number",
+                "id": "line_height_content_mb",
+                "label": "Line Height content Mobile",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "margin_bottom_content",
+                "label": "Margin bottom content",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "margin_bottom_content_mb",
+                "label": "Margin bottom content mobile",
+                "default": 16
+            },
+            {
+                "type": "text",
+                "id": "btn_text",
+                "label": "Text button"
+            },
+            {
+                "type": "url",
+                "id": "link_url",
+                "label": "Button link"
+            },
+            {
+                "type": "header",
+                "content": "custom button"
+            },
+            {
+                "type": "number",
+                "id": "font_size_button",
+                "label": "Size button",
+                "default": 16
+            },
+            {
+                "type": "number",
+                "id": "line_height_button",
+                "label": "Line Height button",
+                "default": 20
+            },
+            {
+                "type": "number",
+                "id": "font_size_button_mb",
+                "label": "Size button Mobile",
+                "default": 16
+            },
+            {
+                "type": "number",
+                "id": "line_height_button_mb",
+                "label": "Line Height button Mobile",
+                "default": 20
+            },
+            {
+                "type": "header",
+                "content": "Padding section"
+            },
+            {
+                "type": "number",
+                "id": "gap_content",
+                "default": 32,
+                "label": "Gap content"
+            },
+            {
+                "type": "number",
+                "id": "gap_content_mb",
+                "default": 24,
+                "label": "Gap content mobile"
+            },
+            {
+                "type": "number",
+                "id": "padding_top",
+                "default": 90,
+                "label": "Padding top"
+            },
+            {
+                "type": "number",
+                "id": "padding_bottom",
+                "default": 60,
+                "label": "Padding bottom"
+            },
+            {
+                "type": "number",
+                "id": "padding_leftright",
+                "default": 32,
+                "label": "Padding left&right"
+            },
+            {
+                "type": "number",
+                "id": "padding_leftright_mb",
+                "default": 16,
+                "label": "Padding left&right mobile "
+            },
+            {
+                "type": "number",
+                "id": "padding_top_mb",
+                "default": 20,
+                "label": "Padding top mobile"
+            },
+            {
+                "type": "number",
+                "id": "padding_bottom_mb",
+                "default": 60,
+                "label": "Padding bottom mobile"
+            },
+            {
+                "type": "header",
+                "content": "Color section"
+            },
+            {
+                "type": "color",
+                "id": "color_content",
+                "label": "Content color",
+                "default": "#000000"
+            },
+            {
+                "type": "color",
+                "id": "bg_section",
+                "label": "Background section"
+            }
+        ],
+        "presets": [
+            {
+                "name": "Image with text"
+            }
+        ]
+    }
+{% endschema %}
