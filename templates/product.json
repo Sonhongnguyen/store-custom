@@ -1,12 +1,3 @@
-/*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
 {
   "sections": {
     "main": {
@@ -62,13 +53,35 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
+          }
+        },
+        "collapsible_tab_icdVpU": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product infomation",
+            "content_description": true,
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible_tab_EM63xh": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Nutrition",
+            "content_description": false,
+            "icon": "none",
+            "content": "<p><strong>Ingredients:<\/strong><\/p><p>Broccoli, Sweet Potato, Carrot, Lettuce, Apple, Cranberry and Blueberry<\/p><p><strong>Guaranteed Analysis:<\/strong><\/p><p>Crude Protein (Min) 12%<br\/>Crude Fat (Min) 4%<br\/>Crude Fiber (Max) 51%<br\/>Moisture (Max) 6%<\/p><p><strong>Calorie Content:<\/strong><\/p><p>ME(kcal\/kg) 953, ME(Kcal\/oz(calculated) 27<\/p>",
+            "page": ""
           }
         }
       },
@@ -82,7 +95,9 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share"
+        "share",
+        "collapsible_tab_icdVpU",
+        "collapsible_tab_EM63xh"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -92,12 +107,76 @@
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
         "media_position": "left",
-        "image_zoom": "lightbox",
+        "image_zoom": "hover",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "image_with_text_cs_H9h8gw": {
+      "type": "image-with-text-cs",
+      "settings": {
+        "content_layout": "right",
+        "content_layout_mb": "bottom",
+        "img_section": "shopify:\/\/shop_images\/img-1.jpg",
+        "richtext": "<p><strong>About Northwest Naturals Pet Food<\/strong><br\/><br\/>Northwest Naturals is proudly owned by Morasch Meats in Portland, Oregon. Morasch Meats has been a family owned business since 1956, specializing in meat processing products for restaurants, grocery stores, and independent retailers. The Morasch Meats facility officially became a USDA-inspected and certified facility in 1980, and soon after they were asked to produce a private-label pet food under the strict guideline of a USDA facility. For the past 20 years, Morasch Meats has been a leader in developing unique and high-quality products for the pet industry. In addition to the 85,000-square-foot primary facility, Morasch Meats proudly acquired an additional 90,000-square-foot facility where High-Pressure Processing and Freeze Drying for both human and pet products takes place. Morasch Meats has been on the cutting edge of advanced food processing technologies and will continue to be so well into the future.<br\/><br\/>In 2004, Morasch Meats founded Northwest Naturals as their own brand of raw frozen pet food. We are fortunate to benefit from the knowledge and trusted techniques of Morasch Meats to ensure the highest quality of products for you and your pets.<\/p>",
+        "richtext_mb": "<p><strong>About Northwest Naturals Pet Food<\/strong><br\/><br\/>Northwest Naturals is proudly owned by Morasch Meats in Portland, Oregon. Morasch Meats has been a family owned business since 1956, specializing in meat processing products for restaurants, grocery stores, and independent retailers. The Morasch Meats facility officially became a USDA-inspected and certified facility in 1980, and soon after they were asked to produce a private-label pet food under the strict guideline of a USDA facility. For the past 20 years, Morasch Meats has been a leader in developing unique and high-quality products for the pet industry. In addition to the 85,000-square-foot primary facility, Morasch Meats proudly acquired an additional 90,000-square-foot facility where High-Pressure Processing and Freeze Drying for both human and pet products takes place. Morasch Meats has been on the cutting edge of advanced food processing technologies and will continue to be so well into the future.<br\/><br\/>In 2004, Morasch Meats founded Northwest Naturals as their own brand of raw frozen pet food. We are fortunate to benefit from the knowledge and trusted techniques of Morasch Meats to ensure the highest quality of products for you and your pets.<\/p>",
+        "font_size_content": 16,
+        "line_height_content": 20,
+        "font_size_content_mb": 16,
+        "line_height_content_mb": 20,
+        "margin_bottom_content": 20,
+        "margin_bottom_content_mb": 16,
+        "btn_text": "",
+        "link_url": "",
+        "font_size_button": 16,
+        "line_height_button": 20,
+        "font_size_button_mb": 16,
+        "line_height_button_mb": 20,
+        "gap_content": 32,
+        "gap_content_mb": 24,
+        "padding_top": 90,
+        "padding_bottom": 60,
+        "padding_leftright": 32,
+        "padding_leftright_mb": 16,
+        "padding_top_mb": 20,
+        "padding_bottom_mb": 60,
+        "color_content": "#000000",
+        "bg_section": ""
+      }
+    },
+    "image_with_text_cs_XT39R3": {
+      "type": "image-with-text-cs",
+      "settings": {
+        "content_layout": "left",
+        "content_layout_mb": "bottom",
+        "img_section": "shopify:\/\/shop_images\/img-2.png",
+        "richtext": "<p><strong>The Mission<\/strong><br\/><br\/>The Northwest Naturals mission is to provide pet lovers the option of feeding their pets health-enhancing, life-prolonging, and easy-to-feed food. Our products are carefully formulated based on the most advanced science and principles of raw food diet preparation. We believe in the premise that BARF (Biologically Appropriate Raw Food) improves the quality of life for pets. Our mission is to play an active role in the development of healthy companions, regardless of size or activity level.<br\/><br\/><strong>Family Owned And Families Operated<\/strong><br\/><br\/>Founded in 1956 by Mel Morasch, Morasch Meats continues to be owned by the Morasch family. The company operates with a combination of 80 different families working together to bring quality food to your family.<\/p>",
+        "richtext_mb": "<p>The Mission<br\/><br\/>The Northwest Naturals mission is to provide pet lovers the option of feeding their pets health-enhancing, life-prolonging, and easy-to-feed food. Our products are carefully formulated based on the most advanced science and principles of raw food diet preparation. We believe in the premise that BARF (Biologically Appropriate Raw Food) improves the quality of life for pets. Our mission is to play an active role in the development of healthy companions, regardless of size or activity level.<\/p><p>Family Owned And Families Operated<br\/><br\/>Founded in 1956 by Mel Morasch, Morasch Meats continues to be owned by the Morasch family. The company operates with a combination of 80 different families working together to bring quality food to your family.<\/p>",
+        "font_size_content": 16,
+        "line_height_content": 20,
+        "font_size_content_mb": 16,
+        "line_height_content_mb": 20,
+        "margin_bottom_content": 20,
+        "margin_bottom_content_mb": 16,
+        "btn_text": "",
+        "link_url": "",
+        "font_size_button": 16,
+        "line_height_button": 20,
+        "font_size_button_mb": 16,
+        "line_height_button_mb": 20,
+        "gap_content": 32,
+        "gap_content_mb": 24,
+        "padding_top": 90,
+        "padding_bottom": 60,
+        "padding_leftright": 32,
+        "padding_leftright_mb": 16,
+        "padding_top_mb": 20,
+        "padding_bottom_mb": 60,
+        "color_content": "#f3f3f3",
+        "bg_section": "#80a963"
       }
     },
     "related-products": {
@@ -137,6 +216,8 @@
   },
   "order": [
     "main",
+    "image_with_text_cs_H9h8gw",
+    "image_with_text_cs_XT39R3",
     "related-products",
     "1722337773800b69c3"
   ]

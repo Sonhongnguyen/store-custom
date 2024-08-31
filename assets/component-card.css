@@ -481,5 +481,33 @@
 
   .grid__item:nth-child(8n) .product-card-wrapper:hover .shape--blob {
     clip-path: polygon(var(--shape--blob-5));
+    
   }
+}
+/* custom card product */
+.product-card-wrapper .card__heading {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-card-wrapper .card__heading a {
+  text-decoration: none;
+}
+.card__badge {
+  align-self: flex-start;
+  grid-row-start: 1;
+  justify-self: flex-start;
+}
+.product-card-wrapper .badge-sale {
+  background: #ff0200;
+}
+.product-card-wrapper .price--on-sale .price-item--regular {
+  color: #999999;
+  opacity: 0.8;
+  text-decoration-thickness: 1px;
+}
+.product-card-wrapper .price .price-item {
+  font-size: 16px;
 }

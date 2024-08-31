@@ -1,0 +1,39 @@
+.breadcrumb{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.breadcrumb-custom {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    column-gap: 6px;
+}
+.breadcrumb-custom a {
+    color: #A2A2A2;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    letter-spacing: 0;
+    font-weight: 500;
+}
+.breadcrumb-custom svg {
+    width: 13px;
+    height: 13px;
+}
+.breadcrumb-custom span {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000;
+    font-family: 'Neue Haas Grotesk Display Pro';
+    letter-spacing: 0;
+    font-weight: 500;
+}
+@media (min-width: 990px) {
+    .breadcrumb{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}

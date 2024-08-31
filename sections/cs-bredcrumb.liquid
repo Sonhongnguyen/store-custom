@@ -1,0 +1,188 @@
+{{ 'custom-breadcrumb-section.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_mb }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mb }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+{% unless template == 'index' %}
+    <div class="color-{{ section.settings.color_scheme }} gradient">
+        <div class="breadcrumb page-width section-{{ section.id }}-padding">    
+                <div class="breadcrumb-custom">
+                <a href="{{ routes.cart_url | split: 'cart' | first }}" data-translate="Home">
+                    Home
+                </a>
+                {% if template contains 'product' %}
+                    {% if collection %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                            
+            
+                    {% if collection.handle %}
+                        {% capture url %}{{collection.url}}{% endcapture %}
+                        <span>{{ collection.title | split: '|' | first | link_to: url }}</span>
+                    {% endif %}
+                    {% endif %}
+            
+                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none">
+                    <circle cx="2" cy="2" r="2" fill="#A2A2A2"/>
+                    </svg>
+                    <span>{{ product.title | split: '|' | first }}</span>    
+                {% elsif template contains 'collection' and collection.handle %}
+                    {% if current_tags %}
+                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                        </svg>
+            
+                    {% capture url %}{{collection.url}}{% endcapture %}
+                    <span class="bd-title">
+                        <span>{{ collection.title | split: '|' | first | link_to: url }}</span>
+            
+                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                        </svg>
+            
+                        {% assign bd_tags = current_tags | join: ' + ' %}
+                        <span>{{ bd_tags | split: '|' | first }}</span>
+                    </span>
+            
+                    {% else %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+            
+                    <span class="bd-title">
+                        <span>{{ collection.title | split: '|' | first | link_to: url }}</span>
+                    </span>
+                    {% endif %}
+            
+                {% elsif template == 'cart' %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                    <span
+                    >
+                    {{- 'templates.cart.cart' | t -}}
+                    </span>   
+                {% elsif template == 'article' %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                    <span>{{ blog.title | split: '|' | first | link_to: blog.url }}</span>
+            
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                    <span>{{ article.title | split: '|' | first }}</span>
+            
+                {% elsif template contains 'page' %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                    <span>{{ page.title | split: '|' | first }}</span>
+                {% elsif template.name == 'order' %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                    <span
+                    >
+                    {{ 'customer.account.title' | t }}
+                    </span>
+                {% elsif template.name == 'addresses' %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                    <span
+                    >
+                    {{ 'customer.account.title' | t }}
+                    </span>
+                {% elsif template.name == 'account' %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                    <span
+                    >
+                    {{ 'customer.account.title' | t }}
+                    </span>
+                {% else %}
+                    <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.76562 11.5625L8.82812 7.5L4.76563 3.4375" stroke="#A2A2A2" stroke-width="0.8125"/>
+                    </svg>
+                    <span>{{ page_title | split: '|' | first }}</span>
+                {% endif %}
+                </div>      
+        </div>
+    </div>
+{% endunless %}
+{% schema %}
+{
+  "name": "Custom Breadcrumb",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [    
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },    
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Top Mobile",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding Bottom Mobile",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Breadcrumb"
+    }
+  ]
+}
+{% endschema %}
