@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -5,13 +14,12 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "<a href=\"\/products\/ziwi-peak-original-series-pate-wet-cat-food-venison-copy-1\" title=\"Lotus Grain Free Soft Baked Dog Treats - Venison Recipe\">See more from Canine Caviar<\/a>",
+            "text": "<a href=\"/products/ziwi-peak-original-series-pate-wet-cat-food-venison-copy-1\" title=\"Lotus Grain Free Soft Baked Dog Treats - Venison Recipe\">See more from Canine Caviar</a>",
             "text_style": "uppercase",
             "margin_top_custom_text": 0
           }
@@ -24,25 +32,22 @@
           }
         },
         "judge_me_reviews_preview_badge_VXAMcE": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button"
           }
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -54,8 +59,7 @@
         "description": {
           "type": "description",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "share": {
           "type": "share",
@@ -80,7 +84,7 @@
             "heading": "Nutrition",
             "content_description": false,
             "icon": "none",
-            "content": "<p><strong>Ingredients:<\/strong><\/p><p>Broccoli, Sweet Potato, Carrot, Lettuce, Apple, Cranberry and Blueberry<\/p><p><strong>Guaranteed Analysis:<\/strong><\/p><p>Crude Protein (Min) 12%<br\/>Crude Fat (Min) 4%<br\/>Crude Fiber (Max) 51%<br\/>Moisture (Max) 6%<\/p><p><strong>Calorie Content:<\/strong><\/p><p>ME(kcal\/kg) 953, ME(Kcal\/oz(calculated) 27<\/p>",
+            "content": "<p><strong>Ingredients:</strong></p><p>Broccoli, Sweet Potato, Carrot, Lettuce, Apple, Cranberry and Blueberry</p><p><strong>Guaranteed Analysis:</strong></p><p>Crude Protein (Min) 12%<br/>Crude Fat (Min) 4%<br/>Crude Fiber (Max) 51%<br/>Moisture (Max) 6%</p><p><strong>Calorie Content:</strong></p><p>ME(kcal/kg) 953, ME(Kcal/oz(calculated) 27</p>",
             "page": ""
           }
         }
@@ -120,9 +124,9 @@
       "settings": {
         "content_layout": "right",
         "content_layout_mb": "bottom",
-        "img_section": "shopify:\/\/shop_images\/img-1.jpg",
-        "richtext": "<p><strong>About Northwest Naturals Pet Food<\/strong><br\/><br\/>Northwest Naturals is proudly owned by Morasch Meats in Portland, Oregon. Morasch Meats has been a family owned business since 1956, specializing in meat processing products for restaurants, grocery stores, and independent retailers. The Morasch Meats facility officially became a USDA-inspected and certified facility in 1980, and soon after they were asked to produce a private-label pet food under the strict guideline of a USDA facility. For the past 20 years, Morasch Meats has been a leader in developing unique and high-quality products for the pet industry. In addition to the 85,000-square-foot primary facility, Morasch Meats proudly acquired an additional 90,000-square-foot facility where High-Pressure Processing and Freeze Drying for both human and pet products takes place. Morasch Meats has been on the cutting edge of advanced food processing technologies and will continue to be so well into the future.<br\/><br\/>In 2004, Morasch Meats founded Northwest Naturals as their own brand of raw frozen pet food. We are fortunate to benefit from the knowledge and trusted techniques of Morasch Meats to ensure the highest quality of products for you and your pets.<\/p>",
-        "richtext_mb": "<p><strong>About Northwest Naturals Pet Food<\/strong><br\/><br\/>Northwest Naturals is proudly owned by Morasch Meats in Portland, Oregon. Morasch Meats has been a family owned business since 1956, specializing in meat processing products for restaurants, grocery stores, and independent retailers. The Morasch Meats facility officially became a USDA-inspected and certified facility in 1980, and soon after they were asked to produce a private-label pet food under the strict guideline of a USDA facility. For the past 20 years, Morasch Meats has been a leader in developing unique and high-quality products for the pet industry. In addition to the 85,000-square-foot primary facility, Morasch Meats proudly acquired an additional 90,000-square-foot facility where High-Pressure Processing and Freeze Drying for both human and pet products takes place. Morasch Meats has been on the cutting edge of advanced food processing technologies and will continue to be so well into the future.<br\/><br\/>In 2004, Morasch Meats founded Northwest Naturals as their own brand of raw frozen pet food. We are fortunate to benefit from the knowledge and trusted techniques of Morasch Meats to ensure the highest quality of products for you and your pets.<\/p>",
+        "img_section": "shopify://shop_images/img-1.jpg",
+        "richtext": "<p><strong>About Northwest Naturals Pet Food</strong><br/><br/>Northwest Naturals is proudly owned by Morasch Meats in Portland, Oregon. Morasch Meats has been a family owned business since 1956, specializing in meat processing products for restaurants, grocery stores, and independent retailers. The Morasch Meats facility officially became a USDA-inspected and certified facility in 1980, and soon after they were asked to produce a private-label pet food under the strict guideline of a USDA facility. For the past 20 years, Morasch Meats has been a leader in developing unique and high-quality products for the pet industry. In addition to the 85,000-square-foot primary facility, Morasch Meats proudly acquired an additional 90,000-square-foot facility where High-Pressure Processing and Freeze Drying for both human and pet products takes place. Morasch Meats has been on the cutting edge of advanced food processing technologies and will continue to be so well into the future.<br/><br/>In 2004, Morasch Meats founded Northwest Naturals as their own brand of raw frozen pet food. We are fortunate to benefit from the knowledge and trusted techniques of Morasch Meats to ensure the highest quality of products for you and your pets.</p>",
+        "richtext_mb": "<p><strong>About Northwest Naturals Pet Food</strong><br/><br/>Northwest Naturals is proudly owned by Morasch Meats in Portland, Oregon. Morasch Meats has been a family owned business since 1956, specializing in meat processing products for restaurants, grocery stores, and independent retailers. The Morasch Meats facility officially became a USDA-inspected and certified facility in 1980, and soon after they were asked to produce a private-label pet food under the strict guideline of a USDA facility. For the past 20 years, Morasch Meats has been a leader in developing unique and high-quality products for the pet industry. In addition to the 85,000-square-foot primary facility, Morasch Meats proudly acquired an additional 90,000-square-foot facility where High-Pressure Processing and Freeze Drying for both human and pet products takes place. Morasch Meats has been on the cutting edge of advanced food processing technologies and will continue to be so well into the future.<br/><br/>In 2004, Morasch Meats founded Northwest Naturals as their own brand of raw frozen pet food. We are fortunate to benefit from the knowledge and trusted techniques of Morasch Meats to ensure the highest quality of products for you and your pets.</p>",
         "font_size_content": 16,
         "line_height_content": 20,
         "font_size_content_mb": 16,
@@ -152,9 +156,9 @@
       "settings": {
         "content_layout": "left",
         "content_layout_mb": "bottom",
-        "img_section": "shopify:\/\/shop_images\/img-2.png",
-        "richtext": "<p><strong>The Mission<\/strong><br\/><br\/>The Northwest Naturals mission is to provide pet lovers the option of feeding their pets health-enhancing, life-prolonging, and easy-to-feed food. Our products are carefully formulated based on the most advanced science and principles of raw food diet preparation. We believe in the premise that BARF (Biologically Appropriate Raw Food) improves the quality of life for pets. Our mission is to play an active role in the development of healthy companions, regardless of size or activity level.<br\/><br\/><strong>Family Owned And Families Operated<\/strong><br\/><br\/>Founded in 1956 by Mel Morasch, Morasch Meats continues to be owned by the Morasch family. The company operates with a combination of 80 different families working together to bring quality food to your family.<\/p>",
-        "richtext_mb": "<p>The Mission<br\/><br\/>The Northwest Naturals mission is to provide pet lovers the option of feeding their pets health-enhancing, life-prolonging, and easy-to-feed food. Our products are carefully formulated based on the most advanced science and principles of raw food diet preparation. We believe in the premise that BARF (Biologically Appropriate Raw Food) improves the quality of life for pets. Our mission is to play an active role in the development of healthy companions, regardless of size or activity level.<\/p><p>Family Owned And Families Operated<br\/><br\/>Founded in 1956 by Mel Morasch, Morasch Meats continues to be owned by the Morasch family. The company operates with a combination of 80 different families working together to bring quality food to your family.<\/p>",
+        "img_section": "shopify://shop_images/img-2.png",
+        "richtext": "<p><strong>The Mission</strong><br/><br/>The Northwest Naturals mission is to provide pet lovers the option of feeding their pets health-enhancing, life-prolonging, and easy-to-feed food. Our products are carefully formulated based on the most advanced science and principles of raw food diet preparation. We believe in the premise that BARF (Biologically Appropriate Raw Food) improves the quality of life for pets. Our mission is to play an active role in the development of healthy companions, regardless of size or activity level.<br/><br/><strong>Family Owned And Families Operated</strong><br/><br/>Founded in 1956 by Mel Morasch, Morasch Meats continues to be owned by the Morasch family. The company operates with a combination of 80 different families working together to bring quality food to your family.</p>",
+        "richtext_mb": "<p>The Mission<br/><br/>The Northwest Naturals mission is to provide pet lovers the option of feeding their pets health-enhancing, life-prolonging, and easy-to-feed food. Our products are carefully formulated based on the most advanced science and principles of raw food diet preparation. We believe in the premise that BARF (Biologically Appropriate Raw Food) improves the quality of life for pets. Our mission is to play an active role in the development of healthy companions, regardless of size or activity level.</p><p>Family Owned And Families Operated<br/><br/>Founded in 1956 by Mel Morasch, Morasch Meats continues to be owned by the Morasch family. The company operates with a combination of 80 different families working together to bring quality food to your family.</p>",
         "font_size_content": 16,
         "line_height_content": 20,
         "font_size_content_mb": 16,
@@ -201,9 +205,8 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_review_widget_V799wN": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
