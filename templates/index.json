@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero_section_eMcHyw": {
@@ -6,8 +15,8 @@
         "item_t77hcC": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hero-1.webp",
-            "image_mb": "shopify:\/\/shop_images\/hero-1.webp",
+            "image": "shopify://shop_images/hero-1.webp",
+            "image_mb": "shopify://shop_images/hero-1.webp",
             "title": "",
             "title_mb": "",
             "description": "",
@@ -21,8 +30,8 @@
         "item_wccTDV": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hero-2.webp",
-            "image_mb": "shopify:\/\/shop_images\/hero-2.webp",
+            "image": "shopify://shop_images/hero-2.webp",
+            "image_mb": "shopify://shop_images/hero-2.webp",
             "title": "",
             "title_mb": "",
             "description": "",
@@ -36,8 +45,8 @@
         "item_JWNeVb": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hero-3.jpg",
-            "image_mb": "shopify:\/\/shop_images\/hero-3.jpg",
+            "image": "shopify://shop_images/hero-3.jpg",
+            "image_mb": "shopify://shop_images/hero-3.jpg",
             "title": "",
             "title_mb": "",
             "description": "",
@@ -51,8 +60,8 @@
         "item_mheyKQ": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hero-4.webp",
-            "image_mb": "shopify:\/\/shop_images\/hero-4.webp",
+            "image": "shopify://shop_images/hero-4.webp",
+            "image_mb": "shopify://shop_images/hero-4.webp",
             "title": "",
             "title_mb": "",
             "description": "",
@@ -66,8 +75,8 @@
         "item_JPGaEm": {
           "type": "item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/hero-5.webp",
-            "image_mb": "shopify:\/\/shop_images\/hero-5.webp",
+            "image": "shopify://shop_images/hero-5.webp",
+            "image_mb": "shopify://shop_images/hero-5.webp",
             "title": "",
             "title_mb": "",
             "description": "",
@@ -154,8 +163,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -163,8 +172,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -172,8 +181,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -181,8 +190,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -197,8 +206,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -206,8 +215,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -222,8 +231,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -277,21 +286,21 @@
         "article_htUJnU": {
           "type": "article",
           "settings": {
-            "article": "news\/6-great-innovative-litter-box-options-for-your-cat",
+            "article": "news/6-great-innovative-litter-box-options-for-your-cat",
             "btn_article": "Read more"
           }
         },
         "article_7VwkNN": {
           "type": "article",
           "settings": {
-            "article": "news\/5-tips-for-teaching-your-dog-how-to-swim",
+            "article": "news/5-tips-for-teaching-your-dog-how-to-swim",
             "btn_article": "Read more"
           }
         },
         "article_aHdfD8": {
           "type": "article",
           "settings": {
-            "article": "news\/12-safety-tips-for-boating-with-dogs",
+            "article": "news/12-safety-tips-for-boating-with-dogs",
             "btn_article": "Read more"
           }
         }
@@ -303,6 +312,12 @@
       ],
       "settings": {
         "heading_text": "NEWS",
+        "font_size_heading": 24,
+        "line_height_heading": 32,
+        "font_size_heading_mb": 18,
+        "line_height_heading_mb": 24,
+        "margin_bottom_heading": 24,
+        "margin_bottom_heading_mb": 24,
         "btn_text": "",
         "btn_url": "",
         "font_size_title": 16,
@@ -372,8 +387,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -388,8 +403,8 @@
           "type": "collection",
           "settings": {
             "collection": "dog-treats",
-            "image": "shopify:\/\/shop_images\/dog-treats.jpg",
-            "image_mb": "shopify:\/\/shop_images\/dog-treats.jpg",
+            "image": "shopify://shop_images/dog-treats.jpg",
+            "image_mb": "shopify://shop_images/dog-treats.jpg",
             "title": ""
           }
         },
@@ -440,8 +455,8 @@
             "block_type": "custom",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
-            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
-            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_dsk": "shopify://shop_images/new-zealand.jpg",
+            "image_mb": "shopify://shop_images/new-zealand.jpg",
             "title": "",
             "title_mb": "",
             "button": "More",
@@ -455,8 +470,8 @@
             "block_type": "custom",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
-            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
-            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_dsk": "shopify://shop_images/new-zealand.jpg",
+            "image_mb": "shopify://shop_images/new-zealand.jpg",
             "title": "",
             "title_mb": "",
             "button": "More",
@@ -470,8 +485,8 @@
             "block_type": "custom",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
-            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
-            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_dsk": "shopify://shop_images/new-zealand.jpg",
+            "image_mb": "shopify://shop_images/new-zealand.jpg",
             "title": "",
             "title_mb": "",
             "button": "More",
@@ -485,8 +500,8 @@
             "block_type": "custom",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
-            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
-            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_dsk": "shopify://shop_images/new-zealand.jpg",
+            "image_mb": "shopify://shop_images/new-zealand.jpg",
             "title": "",
             "title_mb": "",
             "button": "More",
@@ -500,8 +515,8 @@
             "block_type": "custom",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
-            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
-            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_dsk": "shopify://shop_images/new-zealand.jpg",
+            "image_mb": "shopify://shop_images/new-zealand.jpg",
             "title": "",
             "title_mb": "",
             "button": "More",
@@ -515,8 +530,8 @@
             "block_type": "custom",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
-            "image_dsk": "shopify:\/\/shop_images\/new-zealand.jpg",
-            "image_mb": "shopify:\/\/shop_images\/new-zealand.jpg",
+            "image_dsk": "shopify://shop_images/new-zealand.jpg",
+            "image_mb": "shopify://shop_images/new-zealand.jpg",
             "title": "",
             "title_mb": "",
             "button": "More",
@@ -567,8 +582,8 @@
             "block_type": "product",
             "collection": "",
             "product": "earth-animal-wisdom-air-dried-dog-food-from-the-land",
-            "title": "<p>Title item<\/p>",
-            "title_mb": "<p>Title item<\/p>",
+            "title": "<p>Title item</p>",
+            "title_mb": "<p>Title item</p>",
             "url_button": "",
             "background_item": "rgba(0,0,0,0)"
           }
@@ -579,8 +594,8 @@
             "block_type": "product",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-venison-copy-1",
-            "title": "<p>Title item<\/p>",
-            "title_mb": "<p>Title item<\/p>",
+            "title": "<p>Title item</p>",
+            "title_mb": "<p>Title item</p>",
             "url_button": "",
             "background_item": "rgba(0,0,0,0)"
           }
@@ -591,8 +606,8 @@
             "block_type": "product",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken",
-            "title": "<p>Title item<\/p>",
-            "title_mb": "<p>Title item<\/p>",
+            "title": "<p>Title item</p>",
+            "title_mb": "<p>Title item</p>",
             "url_button": "",
             "background_item": "rgba(0,0,0,0)"
           }
@@ -603,8 +618,8 @@
             "block_type": "product",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-chicken-copy",
-            "title": "<p>Title item<\/p>",
-            "title_mb": "<p>Title item<\/p>",
+            "title": "<p>Title item</p>",
+            "title_mb": "<p>Title item</p>",
             "url_button": "",
             "background_item": "rgba(0,0,0,0)"
           }
@@ -615,8 +630,8 @@
             "block_type": "product",
             "collection": "",
             "product": "earth-animal-wisdom-air-dried-dog-food-from-the-land-copy",
-            "title": "<p>Title item<\/p>",
-            "title_mb": "<p>Title item<\/p>",
+            "title": "<p>Title item</p>",
+            "title_mb": "<p>Title item</p>",
             "url_button": "",
             "background_item": "rgba(0,0,0,0)"
           }
@@ -627,10 +642,10 @@
             "block_type": "product",
             "collection": "",
             "product": "ziwi-peak-original-series-pate-wet-cat-food-venison-copy",
-            "title": "<p>Title item<\/p>",
-            "title_mb": "<p>Title item<\/p>",
+            "title": "<p>Title item</p>",
+            "title_mb": "<p>Title item</p>",
             "url_button": "",
-            "background_item": "#F4F4F4"
+            "background_item": "#f4f4f4"
           }
         }
       },
@@ -662,6 +677,7 @@
         "margin_bottom_title": 8,
         "margin_bottom_title_mb": 8,
         "color_content_section": "#000000",
+        "border_item": true,
         "padding_top": 0,
         "padding_bottom": 0,
         "padding_top_mb": 0,
@@ -682,7 +698,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -721,7 +737,7 @@
         "text_tTPzc9": {
           "type": "text",
           "settings": {
-            "text": "<p>BaxterBoo.com is an online one-stop shop for Pet Parents. We provide a wide variety of products from small boutique brands to some of the world's largest pet brands. With an eye on organic, sustainable, and earth-friendly products, we strive to make sure your pet is happy and healthy.<br\/><br\/>We personally inspect every item we carry and only stock those products that we would give to our own four-legged friends. We take personal pride in ensuring that you're satisfied with your order and that you will always be able to find the perfect item for your pet with our best in class customer service team.<br\/><br\/>Find everything your pet needs such as healthcare, food, treats, clothing, grooming, pharmacy, veterinary diet, and more at BaxterBoo.com.<\/p>"
+            "text": "<p>BaxterBoo.com is an online one-stop shop for Pet Parents. We provide a wide variety of products from small boutique brands to some of the world's largest pet brands. With an eye on organic, sustainable, and earth-friendly products, we strive to make sure your pet is happy and healthy.<br/><br/>We personally inspect every item we carry and only stock those products that we would give to our own four-legged friends. We take personal pride in ensuring that you're satisfied with your order and that you will always be able to find the perfect item for your pet with our best in class customer service team.<br/><br/>Find everything your pet needs such as healthcare, food, treats, clothing, grooming, pharmacy, veterinary diet, and more at BaxterBoo.com.</p>"
           }
         }
       },
@@ -745,8 +761,8 @@
           "type": "block",
           "settings": {
             "media_type": "image",
-            "image_dsk": "shopify:\/\/shop_images\/photo-contest.png",
-            "image_mb": "shopify:\/\/shop_images\/photo-contest.png",
+            "image_dsk": "shopify://shop_images/photo-contest.png",
+            "image_mb": "shopify://shop_images/photo-contest.png",
             "title": "",
             "description": "",
             "button": "",
@@ -774,13 +790,13 @@
         "line_height_des_mb": 21,
         "margin_bottom_des": 16,
         "margin_bottom_des_mb": 8,
-        "color_content": "#F7F7F6",
-        "color_btn": "#F7F7F6",
+        "color_content": "#f7f7f6",
+        "color_btn": "#f7f7f6",
         "padding_top": 45,
         "padding_bottom": 0,
         "padding_top_mb": 32,
         "padding_bottom_mb": 0,
-        "bg_overlay": "#000",
+        "bg_overlay": "#000000",
         "opacity_overlay": 0,
         "gardient_overlay": ""
       }
@@ -789,9 +805,9 @@
       "type": "apps",
       "blocks": {
         "klaviyo_email_marketing_sms_form_embed_block_LCCL99": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": "<div class=\"klaviyo-form-Wiaafz\"><\/div>"
+            "formId": "<div class=\"klaviyo-form-Wiaafz\"></div>"
           }
         }
       },
@@ -800,6 +816,20 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "video_HfJtfi": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://player.vimeo.com/video/949068613?title=0&amp;byline=0&amp;portrait=0&amp;controls=1&amp;loop=1",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -814,6 +844,7 @@
     "image_banner",
     "rich_text_tYqpbB",
     "block_banner_zqeaAN",
-    "17241490825d4767d6"
+    "17241490825d4767d6",
+    "video_HfJtfi"
   ]
 }
