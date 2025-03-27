@@ -1,11 +1,21 @@
 {
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
     "autoprefixer": "^10.4.19",
+    "babel-loader": "^9.2.1",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4"
   },
   "scripts": {
     "watch": "npx tailwindcss -i ./style.css -o ./assets/style.css --watch",
     "dev": "npx tailwindcss -i ./style.css -o ./assets/style.css --dev"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   }
 }
