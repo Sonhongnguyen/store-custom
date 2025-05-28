@@ -1,7 +1,50 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "newsletter_AjMHzM": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_B7MhBh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_VgGr9H": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
+          }
+        },
+        "email_form_BbnR9K": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_B7MhBh",
+        "paragraph_VgGr9H",
+        "email_form_BbnR9K"
+      ],
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1724147924a90b933a": {
       "type": "apps",
       "settings": {
@@ -14,7 +57,7 @@
         "image_9Mqx66": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/PetLuxeNest-logo.svg",
+            "image": "shopify://shop_images/PetLuxeNest-logo.svg",
             "image_width": 220,
             "alignment": ""
           }
@@ -22,29 +65,29 @@
         "link_list_xc9Jgz": {
           "type": "link_list",
           "settings": {
-            "heading": "<strong>ABOUT US<\/strong>",
+            "heading": "<strong>ABOUT US</strong>",
             "menu": "about"
           }
         },
         "link_list_EFdKzB": {
           "type": "link_list",
           "settings": {
-            "heading": "<strong>HELP & SUPPORT<\/strong>",
+            "heading": "<strong>HELP & SUPPORT</strong>",
             "menu": "help-support"
           }
         },
         "link_list_kMKACD": {
           "type": "link_list",
           "settings": {
-            "heading": "<strong>USEFUL INFORMATION<\/strong>",
+            "heading": "<strong>USEFUL INFORMATION</strong>",
             "menu": "useful-information"
           }
         },
         "text_6TfpTe": {
           "type": "text",
           "settings": {
-            "heading": "<strong>CONTACT<\/strong>",
-            "subtext": "<p><a href=\"\/pages\/contact\" title=\"Contact\">Contact Us<\/a><\/p><p>+84 333880569<\/p><p>Mon-Fri: 10am - 10pm<\/p>"
+            "heading": "<strong>CONTACT</strong>",
+            "subtext": "<p><a href=\"/pages/contact\" title=\"Contact\">Contact Us</a></p><p>+84 333880569</p><p>Mon-Fri: 10am - 10pm</p>"
           }
         }
       },
@@ -72,6 +115,7 @@
     }
   },
   "order": [
+    "newsletter_AjMHzM",
     "1724147924a90b933a",
     "footer"
   ]
