@@ -189,6 +189,14 @@
         "type": "shopify://apps/wishlist-wishify/blocks/app-embed/e14a43b5-34c6-492d-b46f-3ad2eda08696",
         "disabled": false,
         "settings": {}
+      },
+      "7870687481494312845": {
+        "type": "shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+        "disabled": false,
+        "settings": {
+          "additionalWLButtonCssClasses": "",
+          "additionalWLCartBubbleCssClasses": ""
+        }
       }
     },
     "color_schemes": {
