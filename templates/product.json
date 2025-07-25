@@ -87,6 +87,20 @@
             "content": "<p><strong>Ingredients:</strong></p><p>Broccoli, Sweet Potato, Carrot, Lettuce, Apple, Cranberry and Blueberry</p><p><strong>Guaranteed Analysis:</strong></p><p>Crude Protein (Min) 12%<br/>Crude Fat (Min) 4%<br/>Crude Fiber (Max) 51%<br/>Moisture (Max) 6%</p><p><strong>Calorie Content:</strong></p><p>ME(kcal/kg) 953, ME(Kcal/oz(calculated) 27</p>",
             "page": ""
           }
+        },
+        "wishlist_hero_custom_product_button_PCUhWc": {
+          "type": "shopify://apps/wishlist-hero/blocks/custom-product-button/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+          "settings": {
+            "displayButtonMode": "~",
+            "contentAlignment": "center",
+            "buttonAlignment": "center",
+            "buttonFullwidth": true,
+            "removeBoxShadowAndBorder": false,
+            "horizontalPadding": 20,
+            "iconTopOffset": 0,
+            "addedCssClassNames": "",
+            "addedContainerStyles": ""
+          }
         }
       },
       "block_order": [
@@ -101,7 +115,8 @@
         "description",
         "share",
         "collapsible_tab_icdVpU",
-        "collapsible_tab_EM63xh"
+        "collapsible_tab_EM63xh",
+        "wishlist_hero_custom_product_button_PCUhWc"
       ],
       "settings": {
         "enable_sticky_info": true,
