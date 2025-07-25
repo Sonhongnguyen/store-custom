@@ -285,7 +285,13 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
-  </head>
+  <script type="text/javascript">if(typeof window.hulkappsWishlist === 'undefined') {
+                            window.hulkappsWishlist = {};
+                        }
+                        window.hulkappsWishlist.baseURL = '/apps/advanced-wishlist/api';
+                        window.hulkappsWishlist.hasAppBlockSupport = '1';
+                        </script>
+</head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -354,5 +360,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
     <script src="{{ 'swiper-bundle.min.js' | asset_url }}"></script>
-  </body>
+  {% render 'hulkappsWishlistPopup' %}
+</body>
 </html>
