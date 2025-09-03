@@ -11,6 +11,16 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_liquid_n9CFtD": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-SQN9ij\"></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "newsletter_AjMHzM": {
       "type": "newsletter",
       "blocks": {
@@ -115,6 +125,7 @@
     }
   },
   "order": [
+    "custom_liquid_n9CFtD",
     "newsletter_AjMHzM",
     "1724147924a90b933a",
     "footer"
