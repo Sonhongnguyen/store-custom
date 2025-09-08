@@ -165,27 +165,6 @@
           "templateId": "YMS6iMaVS7"
         }
       },
-      "7870687481494312845": {
-        "type": "shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
-        "disabled": false,
-        "settings": {
-          "additionalWLButtonCssClasses": "",
-          "additionalWLCartBubbleCssClasses": ""
-        }
-      },
-      "1366455014531238847": {
-        "type": "shopify://apps/wishlist-hero/blocks/customize-style-block/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
-        "disabled": false,
-        "settings": {
-          "Btn_color": "",
-          "WishlistButtonTextColor": "",
-          "Ico_color": "",
-          "HeaderFontSize": 30,
-          "ProductNameFontSize": 18,
-          "PriceFontSize": 16,
-          "PriceColor": ""
-        }
-      },
       "4061177414627956758": {
         "type": "shopify://apps/wishlist-wishify/blocks/app-embed/e14a43b5-34c6-492d-b46f-3ad2eda08696",
         "disabled": true,
@@ -252,6 +231,31 @@
           "swym_variant_selector_product_detail_font_color": "#fff",
           "swym_variant_selector_create_list_placeholder_text": "Enter wishlist name",
           "swym_variant_selector_create_list_title": "Name Your Wishlist"
+        }
+      },
+      "1366455014531238847": {
+        "type": "shopify://apps/wishlist-hero/blocks/customize-style-block/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+        "disabled": true,
+        "settings": {
+          "Btn_color": "",
+          "WishlistButtonTextColor": "",
+          "Ico_color": "",
+          "HeaderFontSize": 30,
+          "HeaderColor": "",
+          "ProductNameFontSize": 18,
+          "PriceFontSize": 16,
+          "PriceColor": ""
+        }
+      },
+      "7870687481494312845": {
+        "type": "shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72",
+        "disabled": true,
+        "settings": {
+          "customThemeName": "~",
+          "additionalWLButtonCssClasses": "",
+          "additionalWLCartBubbleCssClasses": "",
+          "extraHTMLToAppend": "",
+          "disableAutomaticButtonAddition": false
         }
       }
     },
