@@ -18,6 +18,7 @@
         },
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<a href=\"/products/ziwi-peak-original-series-pate-wet-cat-food-venison-copy-1\" title=\"Lotus Grain Free Soft Baked Dog Treats - Venison Recipe\">See more from Canine Caviar</a>",
             "text_style": "uppercase",
@@ -100,15 +101,15 @@
             "swym_atw_button_alignment": "center",
             "swym_add_to_wishlist_color": "#000000",
             "swym_added_to_wishlist_color": "#222222",
-            "swym_button_text_color": "#fff",
-            "swym_atw_border_color": "#000",
+            "swym_button_text_color": "#ffffff",
+            "swym_atw_border_color": "#000000",
             "swym_atw_border_thickness": 0,
             "swym_atw_button_border_radius": 0,
             "swym_enable_hover_customization": false,
             "swym_hover_add_to_wishlist_color": "#000000",
             "swym_hover_added_to_wishlist_color": "#222222",
-            "swym_hover_button_text_color": "#fff",
-            "swym_hover_atw_border_color": "#000",
+            "swym_hover_button_text_color": "#ffffff",
+            "swym_hover_atw_border_color": "#000000",
             "swym_hover_atw_border_thickness": 0,
             "swym_hover_atw_button_border_radius": 0,
             "swym_custom_css": ""
@@ -235,7 +236,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
-            "max_width": 1200
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
           }
         }
       },
