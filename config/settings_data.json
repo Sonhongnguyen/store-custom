@@ -123,10 +123,10 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
-    "show_vendor": false,
+    "cart_type": "drawer",
+    "show_vendor": true,
     "show_cart_note": false,
-    "cart_drawer_collection": "",
+    "cart_drawer_collection": "frontpage",
     "cart_color_scheme": "background-1",
     "sections": {
       "main-password-header": {
