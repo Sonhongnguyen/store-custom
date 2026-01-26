@@ -172,7 +172,7 @@
       },
       "back-in-stock-restock-alerts-4bb73be2-b7c2-4870-949f-c528145452a3": {
         "type": "shopify://apps/stoq/blocks/main/4bb73be2-b7c2-4870-949f-c528145452a3",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       },
       "4981902369724952902": {
