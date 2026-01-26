@@ -57,6 +57,12 @@
             "show_gift_card_recipient": false
           }
         },
+        "seal_subscriptions_subscription_widget_XK8ErU": {
+          "type": "shopify://apps/seal-subscriptions/blocks/subscription-widget/13b25004-a140-4ab7-b5fe-29918f759699",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -125,6 +131,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "seal_subscriptions_subscription_widget_XK8ErU",
         "description",
         "share",
         "collapsible_tab_icdVpU",
